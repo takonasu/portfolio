@@ -25,8 +25,8 @@
       </div>
     </nav>
 
-    <section class="main-content columns">
-      <aside class="column is-2 section">
+    <section class="main-content columns" style="box-sizing: border-box;max-width:100vw;">
+      <aside class="column is-2">
         <p class="menu-label is-hidden-touch">
           General
         </p>
@@ -63,9 +63,9 @@ export default {
           to: { name: 'index' }
         },
         {
-          title: 'Inspire',
+          title: 'Product',
           icon: 'lightbulb',
-          to: { name: 'inspire' }
+          to: { name: 'product' }
         }
       ]
     }

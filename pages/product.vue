@@ -1,0 +1,133 @@
+<template>
+  <section class="section">
+    <div class="is-mobile">
+      <b-dropdown aria-role="list" v-model="viewYear">
+        <button class="button is-primary" slot="trigger">
+          <span>{{ viewYear == "all" ? "全て" : viewYear+"年" }}</span>
+          <b-icon icon="menu-down"></b-icon>
+        </button>
+        <b-dropdown-item value="all" aria-role="listitem">全て</b-dropdown-item>
+        <b-dropdown-item :value="2020" aria-role="listitem">2020年</b-dropdown-item>
+        <b-dropdown-item :value="2019" aria-role="listitem">2019年</b-dropdown-item>
+        <b-dropdown-item :value="2018" aria-role="listitem">2018年</b-dropdown-item>
+        <b-dropdown-item :value="2017" aria-role="listitem">2017年</b-dropdown-item>
+        <b-dropdown-item :value="2016" aria-role="listitem">2016年</b-dropdown-item>
+        <b-dropdown-item :value="2015" aria-role="listitem">2015年</b-dropdown-item>
+      </b-dropdown>
+      <div class="columns is-multiline">
+        <div v-for="(article, key) of articles" :key="key" v-if="article.year == viewYear || viewYear == 'all'" class="column is-half">
+          <card :year=article.year :title=article.title :picture=article.picture :description=article.description :viewYear=viewYear>
+            <div v-if="article.link !== ''">
+              <a :href=article.link target="_blank">
+                <b-button type="is-primary">リンク</b-button>
+              </a>
+            </div>
+          </card>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+  import Card from '~/components/Card'
+
+  export default {
+    name: 'HomePage',
+
+    components: {
+      Card
+    },
+    data() {
+      return {
+        articles: [{
+            title: 'Twin:te Project',
+            year: '2020',
+            picture: 'https://www.twinte.net/ogp.jpg',
+            link: 'https://www.twinte.net',
+            description: '新メンバーを加えてリニューアル。インフラ・iOSアプリ担当。しかしアプリのほとんどはWebViewである。ウィジェット機能を有し、曜日振替に対応した今日の時間割が表示される。OSSなので長くメンテナンスされることを期待している。将来的には時間割アプリ以外の機能も追加する予定。'
+          },
+          {
+            title: 'WEB版デンモク',
+            year: '2019',
+            picture: require('~/assets/images/6B.jpg'),
+            link: 'https://webdenmoku.herokuapp.com/',
+            description: '2018年に書いたWEBデンモクをLaravelで書き換えたもの。 曲を送信時にキーを選択したりと機能性・操作性等が向上した。しかしDAMと接続するのが非常にめんどくさく、リモコンのデザインは完全に諦めた。 気が向いたらデザインとDAMとの接続改善やります。'
+          },
+          {
+            title: 'Twin:te',
+            year: '2019',
+            picture: '',
+            link: 'https://twinte.net/',
+            description: '筑波大生専用の時間割アプリ。バックグラウンドを担当。Twin:teプロジェクトの原点である。「簡単に・詳細で・見やすく・使いやすい」時間割を目標に制作。 しかしほとんどフロントエンドの機能なのである。'
+          },
+          {
+            title: 'WEB版デンモク',
+            year: '2018',
+            picture: '',
+            link: 'https://takonasu.ga/denmoku',
+            description: '先輩からAPIの提供を受けてブラウザからカラオケの選曲をできるように。ただしDAMに限る。'
+          },
+          {
+            title: '揺れ見るbot',
+            year: '2018',
+            picture: '',
+            link: 'https://twitter.com/Yuremiru_bot',
+            description: '地震が起きた時いつも強震モニタをスクショしてツイートしていたので自動化した。暇な春休みを使って制作。使用していた強震モニタのサービスが終了してしまったため現在は稼働していない。'
+          },
+          {
+            title: 'バジリスクタイムロゴジェネレータ',
+            year: '2018',
+            picture: require('~/assets/images/maumarutime.jpg'),
+            link: 'https://maumarutime.ga/',
+            description: 'ありそうでなかったので、教習所の空き時間で水のように優しく 花のように激しく制作。利用者が最近増えてきた。ログを見ると下ネタを入力する人が多い。'
+          },
+          {
+            title: 'クイズ研究同好会　早押し機 改',
+            year: '2018',
+            picture: '',
+            link: 'https://blog.takonasu.tk/?p=41',
+            description: '卒業記念にみんなで早押し大会をするために制作。早押し機本体をアプリ化。無理やりパワポと連携させ、得点や早押しの回答権をモニターに表示できるようにした。'
+          },
+          {
+            title: 'クラス企画来場者管理システム 改	',
+            year: '2017',
+            picture: require('~/assets/images/6B.jpg'),
+            link: 'https://blog.takonasu.tk/?p=104',
+            description: '射撃企画の全てを自動化。入場者の得点ランキングを教室入り口の大型モニターで表示。謎にサーバー（ノーパソ）を教室に半年間設置していた。燃えなくてよかった。'
+          },
+          {
+            title: 'クイズ研究同好会　早押し機',
+            year: '2016',
+            picture: '',
+            link: '',
+            description: 'ボタンはあるのに早押し機本体がないというバグが起きていたため、本体をAVRマイコンで制作。やっとちゃんとした早押しができるようになった。'
+          },
+          {
+            title: 'クラス企画来場者管理システム',
+            year: '2016',
+            picture: '',
+            link: '',
+            description: '入場者の得点ランキングが自動で専用HPに公開されるシステム。受付でiPadを用いて入退場を管理していたが、UIが悪くてヒューマンエラーが多発した。'
+          },
+          {
+            title: 'スクフェスボタン',
+            year: '2016',
+            picture: '',
+            link: 'https://www.nicovideo.jp/watch/sm29680260',
+            description: 'スクフェスを物理ボタンでできるようにした。ただしPCのみ対応という謎仕様。PCのスクフェスシミュレーターで使用できる。'
+          },
+          {
+            title: 'クイズ効果音操作アプリ',
+            year: '2015',
+            picture: '',
+            link: 'http://www.namiki-cs.ibk.ed.jp/?action=common_download_main&upload_id=2139',
+            description: '学園祭の委員会開催であるクイズ大会の効果音を簡単に再生できるアプリ。イントロクイズもこれで簡単に出題できる。'
+          }
+        ],
+        viewYear: 'all'
+      }
+    }
+  }
+
+</script>
