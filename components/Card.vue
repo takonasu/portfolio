@@ -4,14 +4,18 @@
 
       <header class="card-header">
         <p class="card-header-title has-text-grey">
-          {{ year + "年 " +title }}
+          {{ year + "年 " + title }}
         </p>
+        
       </header>
 
       <div class="card-content">
         <div class="content has-text-centered">
-          <img :src="picture" size="is-large" type="is-primary" style="max-height:25vh;"/>
+          <img :src="picture" size="is-large" type="is-info" style="max-height:25vh;"/>
         </div>
+        <b-taglist>
+        <b-tag v-for="(tag, key) of tags" :key="key" type="is-info">{{ tag }}</b-tag>
+        </b-taglist>
         <b-collapse :open="viewYear!=='all'" position="is-bottom" aria-id="contentIdForA11y1">
           <a slot="trigger" slot-scope="props" aria-controls="contentIdForA11y1">
             <b-icon :icon="!props.open ? 'menu-down' : 'menu-up'"></b-icon>
@@ -59,7 +63,12 @@
       viewYear: {
         type: String,
         required: true
+      },
+      tags: {
+        type: [],
+        required: true
       }
+      
     }
   }
 

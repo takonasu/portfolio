@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav
-      class="navbar header has-shadow is-primary"
+      class="navbar header has-shadow has-background-info"
       role="navigation"
       aria-label="main navigation"
     >
@@ -10,27 +10,17 @@
           class="navbar-item"
           href="/"
         >
-          <img
-            src="~assets/buefy.png"
-            alt="Buefy"
-            height="28"
-          >
+        <p class="title has-text-white">takonasu.tk</p>
         </a>
-
-        <div class="navbar-burger">
-          <span />
-          <span />
-          <span />
-        </div>
       </div>
     </nav>
 
     <section class="main-content columns" style="box-sizing: border-box;max-width:100vw;">
       <aside class="column is-2">
         <p class="menu-label is-hidden-touch">
-          General
+          Menu
         </p>
-        <ul class="menu-list">
+        <ul class="menu-list is-info">
           <li
             v-for="(item, key) of items"
             :key="key"
