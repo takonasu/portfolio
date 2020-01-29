@@ -5,14 +5,18 @@
   "author": "takonasu",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "NUXT_HOST=0.0.0.0 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
+    "node-sass": "^4.13.1",
     "nuxt": "^2.0.0",
-    "nuxt-buefy": "^0.3.2"
+    "nuxt-buefy": "^0.3.2",
+    "sass-loader": "^8.0.2",
+    "vue-scrollto": "^2.17.1"
   },
   "devDependencies": {
     "eslint-config-prettier": "^4.1.0",

@@ -2,7 +2,7 @@
   <section class="section">
     <div class="is-mobile">
       <b-dropdown aria-role="list" v-model="viewYear">
-        <button class="button is-info" slot="trigger">
+        <button class="button is-primary" slot="trigger">
           <span>{{ viewYear == "all" ? "全て" : viewYear+"年" }}</span>
           <b-icon icon="menu-down"></b-icon>
         </button>
@@ -19,7 +19,7 @@
           <card :year=article.year :title=article.title :picture=article.picture :description=article.description :viewYear=viewYear :tags=article.tag>
             <div v-if="article.link !== ''">
               <a :href=article.link target="_blank">
-                <b-button type="is-info">リンク</b-button>
+                <b-button type="is-primary">リンク</b-button>
               </a>
             </div>
           </card>

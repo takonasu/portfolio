@@ -11,10 +11,10 @@
 
       <div class="card-content">
         <div class="content has-text-centered">
-          <img :src="picture" size="is-large" type="is-info" style="max-height:25vh;"/>
+          <img :src="picture" size="is-large" type="is-primary" style="max-height:25vh;"/>
         </div>
         <b-taglist>
-        <b-tag v-for="(tag, key) of tags" :key="key" type="is-info">{{ tag }}</b-tag>
+        <b-tag v-for="(tag, key) of tags" :key="key" type="is-primary">{{ tag }}</b-tag>
         </b-taglist>
         <b-collapse :open="viewYear!=='all'" position="is-bottom" aria-id="contentIdForA11y1">
           <a slot="trigger" slot-scope="props" aria-controls="contentIdForA11y1">
