@@ -7,7 +7,7 @@
     >
       <div class="navbar-brand">
         <a class="navbar-item" href="/">
-          <p class="title has-text-white">takonasu.tk</p>
+          <p class="title has-text-white">takonasu.net</p>
         </a>
       </div>
     </nav>

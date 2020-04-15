@@ -19,7 +19,7 @@ export default {
         content: "Takonasu's Portfolio"
       },
       { hid: 'og:type', property: 'og:type', content: 'summary' },
-      { hid: 'og:url', property: 'og:url', content: 'https://takonasu.tk' },
+      { hid: 'og:url', property: 'og:url', content: 'https://takonasu.net' },
       {
         hid: 'og:title',
         property: 'og:title',
@@ -28,7 +28,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://takonasu.tk/takonasu_icon.jpg'
+        content: 'https://takonasu.net/takonasu_icon.jpg'
       },
       {
         hid: 'og:description',
@@ -38,7 +38,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: `https://takonasu.tk/takonasu_icon.jpg`
+        content: `https://takonasu.net/takonasu_icon.jpg`
       },
       {
         hid: 'twitter:card',

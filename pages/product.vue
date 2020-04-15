@@ -98,7 +98,7 @@ export default {
           title: 'WEB版デンモク',
           year: '2018',
           picture: require('~/assets/images/WEBdenmoku1.jpg'),
-          link: 'https://takonasu.ga/denmoku',
+          link: 'https://work.takonasu.net/denmoku',
           description:
             '先輩からAPIの提供を受けてブラウザからカラオケの選曲をできるように。ただしDAMに限る。',
           tag: ['PHP']
@@ -125,7 +125,7 @@ export default {
           title: 'クイズ研究同好会　早押し機 改',
           year: '2018',
           picture: require('~/assets/images/Quiz2.jpg'),
-          link: 'https://blog.takonasu.tk/?p=41',
+          link: '',
           description:
             '卒業記念にみんなで早押し大会をするために制作。早押し機本体をアプリ化。無理やりパワポと連携させ、得点や早押しの回答権をモニターに表示できるようにした。',
           tag: ['C#', 'フォームアプリ', 'Arduino']
@@ -134,7 +134,7 @@ export default {
           title: 'クラス企画来場者管理システム 改	',
           year: '2017',
           picture: require('~/assets/images/6B.jpg'),
-          link: 'https://blog.takonasu.tk/?p=104',
+          link: '',
           description:
             '高校3年時の文化祭クラス企画。射撃の全てを自動化。入場者の得点ランキングを教室入り口の大型モニターで表示。サーバー（ノーパソ）を教室に半年間設置していた。燃えなくてよかった。',
           tag: ['C#', 'フォームアプリ', 'ASP.NET', 'WindowsServer']
@@ -144,6 +144,7 @@ export default {
           year: '2016',
           picture: '',
           picture: require('~/assets/images/Quiz.jpg'),
+          link: '',
           description:
             'ボタンはあるのに早押し機本体がないというバグが起きていたため、本体をAVRマイコンで制作。やっとちゃんとした早押しができるようになった。',
           tag: ['AVRマイコン']
