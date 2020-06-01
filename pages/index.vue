@@ -4,7 +4,7 @@
       <div class="columns is-multiline">
         <div class="column is-one-third">
           <figure class="image">
-            <img src="~/assets/images/takonasu.jpg" alt="たこなすの画像" >
+            <img src="~/assets/images/takonasu.jpg" alt="たこなすの画像">
           </figure>
         </div>
         <div class="column">
@@ -32,7 +32,7 @@
                 <p>
                   ソフトウェアや情報科学を中心に勉強をしていますが、電子工作等軽度なハードウェア関係には興味があります。
                   最近ではネットワークインフラ関係に興味を持ち、筑波大学学園祭実行委員会のインフラ担当としてサーバーやネットワーク設備等の管理に携わりました。
-                  様々な言語や技術を経験しましたが、広く浅くといった感じです。<br >しょうもないことが好きです、ニコニコ技術部大好きでした。
+                  様々な言語や技術を経験しましたが、広く浅くといった感じです。<br>しょうもないことが好きです、ニコニコ技術部大好きでした。
                 </p>
                 <p class="subtitle">
                   リンク
