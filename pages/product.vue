@@ -24,9 +24,6 @@
         <b-dropdown-item :value="2016" aria-role="listitem">
           2016年
         </b-dropdown-item>
-        <b-dropdown-item :value="2015" aria-role="listitem">
-          2015年
-        </b-dropdown-item>
       </b-dropdown>
       <div class="columns is-multiline">
         <div
@@ -176,15 +173,6 @@ export default {
           description:
             '高校の文化祭の委員会開催であるクイズ大会の効果音を簡単に再生できるアプリ。イントロクイズもこれで簡単に出題できる。',
           tag: ['C#', 'フォームアプリ']
-        },
-        {
-          title: '共愛大学ホームページコンテスト',
-          year: '2015',
-          picture: require('~/assets/images/HPcontest.jpg'),
-          link: 'https://www.kyoai.ac.jp/?p=1641',
-          description:
-            '友人となんとなく応募。HPビルダーは甘えなのでしっかりコードを書いて応募した。なお敢闘賞。',
-          tag: ['HTML', 'CSS', 'jQuery']
         }
       ],
       viewYear: 'all'
