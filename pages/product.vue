@@ -65,6 +65,15 @@ export default {
     return {
       articles: [
         {
+          title: 'スライドぶっこ抜きマン',
+          year: '2020',
+          picture: require('~/assets/images/bukkonuki.png'),
+          link: 'https://github.com/takonasu/SlideBukkonuki',
+          description:
+            'オンライン授業でスライドを配布しないのに授業動画内でスライドを表示している先生が多いため、動画から自動的にスライドを切り抜いてくれるソフトを作成。スライドが切り替わったときのみ切り抜かれる。自分用に作ったが案外需要があったために公開',
+          tag: ['OpenCV', 'C++']
+        },
+        {
           title: 'Twin:te Project',
           year: '2020',
           picture: 'https://www.twinte.net/ogp.jpg',
