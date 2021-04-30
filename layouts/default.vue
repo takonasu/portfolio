@@ -30,12 +30,7 @@
         <nuxt />
       </div>
 
-      <b-button
-        id="to_top"
-        v-scroll-to="'body'"
-        type="is-primary"
-        rounded="true"
-      >
+      <b-button id="to_top" v-scroll-to="'body'" type="is-primary" rounded>
         <b-icon pack="fas" icon="arrow-up" />
       </b-button>
     </section>
