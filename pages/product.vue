@@ -45,6 +45,11 @@
                 <b-button type="is-primary">リンク</b-button>
               </a>
             </div>
+            <div v-else>
+              <b-button type="is-primary" inverted>
+                リンク
+              </b-button>
+            </div>
           </card>
         </div>
       </div>
