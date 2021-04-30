@@ -28,11 +28,11 @@
       <div class="columns is-multiline">
         <div
           v-for="(article, key) of articles"
-          v-if="article.year == viewYear || viewYear == 'all'"
           :key="key"
           class="column is-half"
         >
           <card
+            v-if="article.year == viewYear || viewYear == 'all'"
             :year="article.year"
             :title="article.title"
             :picture="article.picture"
@@ -148,7 +148,6 @@ export default {
         {
           title: 'クイズ研究同好会　早押し機',
           year: '2016',
-          picture: '',
           picture: require('~/assets/images/Quiz.jpg'),
           link: '',
           description:

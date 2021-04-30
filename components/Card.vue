@@ -14,7 +14,7 @@
             size="is-large"
             type="is-primary"
             style="max-height:25vh;"
-          >
+          />
         </div>
         <b-taglist>
           <b-tag v-for="(tag, key) of tags" :key="key" type="is-primary">
@@ -74,7 +74,7 @@ export default {
       required: true
     },
     tags: {
-      type: [],
+      type: [String],
       required: true
     }
   }
