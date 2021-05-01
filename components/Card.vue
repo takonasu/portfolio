@@ -9,12 +9,11 @@
 
       <div class="card-content">
         <div class="content has-text-centered">
-          <img
-            :src="picture"
-            size="is-large"
-            type="is-primary"
-            style="max-height:25vh;"
-          />
+          <div style="height:25vh;">
+            <a :href="picture">
+            <img :src="picture" size="is-large" type="is-primary" style="max-height:100%;"/>
+            </a>
+          </div>
         </div>
         <b-taglist>
           <b-tag v-for="(tag, key) of tags" :key="key" type="is-primary">
