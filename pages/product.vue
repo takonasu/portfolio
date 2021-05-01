@@ -9,30 +9,29 @@
         <b-dropdown-item value="all" aria-role="listitem">
           全て
         </b-dropdown-item>
-        <b-dropdown-item :value="2020" aria-role="listitem">
+        <b-dropdown-item value="2020" aria-role="listitem">
           2020年
         </b-dropdown-item>
-        <b-dropdown-item :value="2019" aria-role="listitem">
+        <b-dropdown-item value="2019" aria-role="listitem">
           2019年
         </b-dropdown-item>
-        <b-dropdown-item :value="2018" aria-role="listitem">
+        <b-dropdown-item value="2018" aria-role="listitem">
           2018年
         </b-dropdown-item>
-        <b-dropdown-item :value="2017" aria-role="listitem">
+        <b-dropdown-item value="2017" aria-role="listitem">
           2017年
         </b-dropdown-item>
-        <b-dropdown-item :value="2016" aria-role="listitem">
+        <b-dropdown-item value="2016" aria-role="listitem">
           2016年
         </b-dropdown-item>
       </b-dropdown>
       <div class="columns is-multiline">
         <div
-          v-for="(article, key) of articles"
+          v-for="(article, key) of filterArticleByYear"
           :key="key"
           class="column is-half"
         >
           <card
-            v-if="article.year == viewYear || viewYear == 'all'"
             :year="article.year"
             :title="article.title"
             :picture="article.picture"
@@ -198,6 +197,13 @@ export default {
         }
       ],
       viewYear: 'all'
+    }
+  },
+  computed: {
+    filterArticleByYear: function() {
+      return this.articles.filter(el => {
+        return el.year == this.viewYear || this.viewYear == 'all'
+      })
     }
   }
 }
