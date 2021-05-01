@@ -70,6 +70,15 @@ export default {
     return {
       articles: [
         {
+          title: 'MITSUCO',
+          year: '2020',
+          picture: require('~/assets/images/MITSUKO.png'),
+          link: 'https://www.nicovideo.jp/watch/sm38227309',
+          description:
+            '友人2人で共同制作。回路を担当。COCOAの信号を検知し、無意識に密になっていた場合に警告してくれるデバイス。',
+          tag: ['AVRマイコン']
+        },
+        {
           title: 'スライドぶっこ抜きマン',
           year: '2020',
           picture: require('~/assets/images/bukkonuki.png'),
