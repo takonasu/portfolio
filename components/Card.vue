@@ -11,7 +11,12 @@
         <div class="content has-text-centered">
           <div style="height:25vh;">
             <a :href="picture">
-            <img :src="picture" size="is-large" type="is-primary" style="max-height:100%;"/>
+              <img
+                :src="picture"
+                size="is-large"
+                type="is-primary"
+                style="max-height:100%;"
+              />
             </a>
           </div>
         </div>

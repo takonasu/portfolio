@@ -67,6 +67,7 @@ export default {
    */
   plugins: [
     '~/plugins/vue-scrollto.js',
+    '~/plugins/day.js',
     { src: '~plugins/ga.js', mode: 'client' }
   ],
   /*

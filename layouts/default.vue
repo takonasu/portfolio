@@ -55,6 +55,13 @@ export default {
           to: {
             name: 'product'
           }
+        },
+        {
+          title: 'Hobby',
+          icon: 'binoculars',
+          to: {
+            name: 'hobby'
+          }
         }
       ]
     }
