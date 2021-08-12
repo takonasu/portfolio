@@ -45,7 +45,7 @@
                 今まで利用したことのある主な技術の一覧です．
                 <p>
                   AWS ( CloudFormation, Lambda, EC2, CodePipline, CodeBuild, S3,
-                  AmazonConnect ...etc ) / PHP(Laravel) / Node.js / Swift(iOS) /
+                  API Gateway ...etc ) / PHP(Laravel) / Node.js / Swift(iOS) /
                   HTML / CSS / .NET / UbuntuServer ...etc
                 </p>
 
