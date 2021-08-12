@@ -5,7 +5,7 @@
         <b-navbar-item
           v-for="(item, key) of items"
           :key="key"
-          :href="item.to.name"
+          :href="`/` + item.to.name"
         >
           {{ item.title }}
         </b-navbar-item>
@@ -33,7 +33,7 @@ export default {
           title: 'プロフィール',
           icon: 'home',
           to: {
-            name: '/'
+            name: ''
           }
         },
         {
