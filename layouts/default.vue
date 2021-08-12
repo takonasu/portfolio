@@ -1,32 +1,19 @@
 <template>
   <div class="has-navbar-fixed-top">
-    <nav
-      class="navbar header has-shadow has-background-primary is-fixed-top"
-      role="navigation"
-      aria-label="main navigation"
-    >
-      <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-          <p class="title has-text-white">takonasu.net</p>
-        </a>
-      </div>
-    </nav>
+    <b-navbar :spaced="true" :fixed-top="true" type="is-primary">
+      <template #start>
+        <b-navbar-item
+          v-for="(item, key) of items"
+          :key="key"
+          :href="item.to.name"
+        >
+          {{ item.title }}
+        </b-navbar-item>
+      </template>
+    </b-navbar>
 
     <section class="main-content columns is-gapless">
-      <aside class="column is-2">
-        <p class="menu-label is-hidden-touch">
-          Menu
-        </p>
-        <ul class="menu-list is-info">
-          <li v-for="(item, key) of items" :key="key">
-            <nuxt-link :to="item.to" exact-active-class="is-active">
-              <b-icon :icon="item.icon" /> {{ item.title }}
-            </nuxt-link>
-          </li>
-        </ul>
-      </aside>
-
-      <div class="container column is-10">
+      <div class="container">
         <nuxt />
       </div>
 
@@ -43,21 +30,21 @@ export default {
     return {
       items: [
         {
-          title: 'Home',
+          title: 'プロフィール',
           icon: 'home',
           to: {
-            name: 'index'
+            name: '/'
           }
         },
         {
-          title: 'Product',
+          title: '制作物',
           icon: 'lightbulb',
           to: {
             name: 'product'
           }
         },
         {
-          title: 'Hobby',
+          title: '趣味',
           icon: 'binoculars',
           to: {
             name: 'hobby'

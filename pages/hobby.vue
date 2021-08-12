@@ -3,28 +3,21 @@
     <div class="card">
       <div class="card-content">
         <p class="title">
-          Hobby
+          趣味
         </p>
         <p class="subtitle">
-          趣味をだらだら書いていくページです。
+          趣味について書いていくページです．逐次更新予定．
         </p>
         <div class="content">
           <p class="subtitle">
-            趣味
+            趣味一覧
           </p>
-          <ul>
-            <li>
-              ラブライブシリーズ
-            </li>
-            <li>
-              カラオケ
-            </li>
-            <li>
-              ピアノ
-            </li>
-          </ul>
+          <p>
+            ピアノ / カラオケ / 電子工作 / ラブライブシリーズ / 車の運転 /
+            楽天モバイルのアンテナを見つける←（？？？）
+          </p>
           <p class="subtitle">
-            現地参加したライブ（これをまとめたかった）
+            現地参加したライブ一覧
           </p>
 
           <div
@@ -36,8 +29,10 @@
               {{ $dayjs(item.day).format('YYYY年MM月DD日 (dd)') }}
             </header>
             <div style="padding-left:1rem;">
-              <span style="font-weight:bold">{{ item.name }}</span> <br />
-              {{ item.place }} <br />
+              <span style="font-weight:bold">{{ item.name }}</span>
+              <br />
+              {{ item.place }}
+              <br />
               <a v-if="item.link != ''" :href="item.link">ライブ公式ページ</a>
             </div>
           </div>
