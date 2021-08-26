@@ -23,11 +23,11 @@
                   自己紹介
                 </p>
                 <p>
-                  コンピュータネットワークやその周辺技術に興味があり，これを中心に勉強や研究をしています．
+                  コンピュータネットワークやその周辺技術に興味があり，中心に勉強や研究をしています．
                   <br />
-                  それ以外にも電子工作やWEBアプリケーションを作成したりなど幅広く活動しています．
+                  その他，電子工作やWEBアプリケーションを作成したりなど幅広く活動しています．
                   <br />
-                  ほとんどの筑波大学生が利用している筑波大学専用時間割アプリ
+                  筑波大学生の大多数が利用している筑波大学専用時間割アプリ
                   <a href="https://www.twinte.net">Twin:te</a>
                   (ついんて)の発起人です．
                 </p>
@@ -67,14 +67,6 @@
                         <i class="fab fa-twitter" />
                       </span>
                       <span>twitter</span>
-                    </button>
-                  </a>
-                  <a href="https://takonasu.hatenablog.com/">
-                    <button class="button">
-                      <span class="icon">
-                        <i class="fas fa-newspaper" />
-                      </span>
-                      <span>はてブロ</span>
                     </button>
                   </a>
                   <a href="https://qiita.com/takonasu">
