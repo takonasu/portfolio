@@ -77,6 +77,14 @@
                       <span>Qiita</span>
                     </button>
                   </a>
+                  <a href="https://takonasu.hatenablog.com/">
+                    <button class="button">
+                      <span class="icon">
+                        <i class="fas fa-newspaper" />
+                      </span>
+                      <span>はてブロ</span>
+                    </button>
+                  </a>
                 </p>
 
                 <p class="subtitle">
