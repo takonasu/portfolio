@@ -155,6 +155,53 @@ export default {
           link: 'https://www.lovelive-anime.jp/nijigasaki/sp_3rdlive.php',
           place: 'メットライフドーム',
           memo: ''
+        },
+        {
+          day: '2021-10-10T00:00:00+09:00',
+          name:
+            'ラブライブ！虹ヶ咲学園スクールアイドル同好会 UNIT LIVE & FAN MEETING vol.2 QU4RTZ 〜Sweet Cafe〜 DAY.2',
+          link: 'https://www.lovelive-anime.jp/nijigasaki/sp_unitlive.php',
+          place: '幕張メッセイベントホール',
+          memo: ''
+        },
+        {
+          day: '2021-10-16T00:00:00+09:00',
+          name:
+            '鬼頭明里 バースデー＆デビュー周年イベント「smiley anniversary vol.1」 夜の部',
+          link: 'https://kitoakari-fc.com/news/?id=78',
+          place: 'ウェスタ川越 大ホール',
+          memo: ''
+        },
+        {
+          day: '2021-10-17T00:00:00+09:00',
+          name:
+            'ラブライブ！サンシャイン!! CYaRon！2nd LoveLive! ～大革命☆Wake Up Kingdom～ Day2',
+          link: 'https://www.lovelive-anime.jp/uranohoshi/sp_unit2021_CYR.php',
+          place: '幕張メッセ 国際展示場',
+          memo: ''
+        },
+        {
+          day: '2021-10-24T00:00:00+09:00',
+          name:
+            'ラブライブ！虹ヶ咲学園スクールアイドル同好会 UNIT LIVE & FAN MEETING vol.3 A・ZU・NA 〜The Night Before〜 DAY.2',
+          link: 'https://www.lovelive-anime.jp/nijigasaki/sp_unitlive.php',
+          place: '幕張メッセイベントホール',
+          memo: ''
+        },
+        {
+          day: '2021-10-30T00:00:00+09:00',
+          name:
+            'ラブライブ！スーパースター!! Liella! First LoveLive! Tour ～Starlines～ 群馬公演 Day1',
+          link: 'https://www.lovelive-anime.jp/yuigaoka/live/sp_1stlive/',
+          place: 'ベイシア文化ホール 大ホール',
+          memo: ''
+        },
+        {
+          day: '2021-12-04T00:00:00+09:00',
+          name: '鬼頭明里 2nd LIVE「MIRRORS」',
+          link: 'https://kitoakari-fc.com/special/ticket_2ndlive_1',
+          place: 'パシフィコ横浜 国⽴⼤ホール',
+          memo: ''
         }
       ]
     }
