@@ -69,6 +69,15 @@ export default {
     return {
       articles: [
         {
+          title: 'AG_Station',
+          year: '2021',
+          picture: require('~/assets/images/AGStation1.jpg'),
+          link: 'https://github.com/takonasu/AG_Station',
+          description:
+            '超A&Gの予約録画等を行えるツール．自宅サーバー等に配置でき，WEB上から予約ができる．',
+          tag: ['Node.js', 'Express.js', 'Nuxt.js', 'Docker']
+        },
+        {
           title: 'MITSUCO',
           year: '2020',
           picture: require('~/assets/images/MITSUKO.png'),
