@@ -202,6 +202,21 @@ export default {
           link: 'https://kitoakari-fc.com/special/ticket_2ndlive_1',
           place: 'パシフィコ横浜 国⽴⼤ホール',
           memo: ''
+        },
+        {
+          day: '2021-12-31T00:00:00+09:00',
+          name:
+            'LoveLive! Series Presents COUNTDOWN LoveLive! 2021→2022 〜LIVE with a smile!〜',
+          link: 'https://www.lovelive-anime.jp/lovelive-series2021/live.php',
+          place: 'ぴあアリーナMM',
+          memo: ''
+        },
+        {
+          day: '2022-03-06T00:00:00+09:00',
+          name: `ラブライブ！サンシャイン!! Aqours 6th LoveLive! ～KU-RU-KU-RU Rock 'n' Roll TOUR～`,
+          link: 'https://www.lovelive-anime.jp/uranohoshi/sp_6thlive.php',
+          place: '埼玉・メットライフドーム',
+          memo: ''
         }
       ]
     }
