@@ -29,7 +29,7 @@
                   <br />
                   筑波大学生の大多数が利用している筑波大学専用時間割アプリ
                   <a href="https://www.twinte.net">Twin:te</a>
-                  (ついんて)の発起人です．
+                  (ついんて)の発起人であり，iOSアプリの担当をしています．
                 </p>
                 <p class="subtitle">
                   主な所有資格
@@ -66,7 +66,7 @@
                       <span class="icon">
                         <i class="fab fa-twitter" />
                       </span>
-                      <span>twitter</span>
+                      <span>Twitter</span>
                     </button>
                   </a>
                   <a href="https://qiita.com/takonasu">
