@@ -144,7 +144,7 @@ export default {
           title: 'バジリスクタイムロゴジェネレータ',
           year: '2018',
           picture: require('~/assets/images/maumarutime.jpg'),
-          link: 'https://maumarutime.ga/',
+          link: 'https://maumarutime.ml/',
           description:
             'ありそうでなかったので、教習所の空き時間で水のように優しく 花のように激しく制作。利用者が最近増えてきた。ログを見ると下ネタを入力する人が多い。',
           tag: ['PHP']
