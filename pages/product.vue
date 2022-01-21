@@ -9,6 +9,9 @@
         <b-dropdown-item value="all" aria-role="listitem">
           全て
         </b-dropdown-item>
+        <b-dropdown-item value="2021" aria-role="listitem">
+          2021年
+        </b-dropdown-item>
         <b-dropdown-item value="2020" aria-role="listitem">
           2020年
         </b-dropdown-item>
