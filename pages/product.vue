@@ -77,7 +77,7 @@ export default {
           picture: require('~/assets/images/AGStation1.jpg'),
           link: 'https://github.com/takonasu/AG_Station',
           description:
-            '超A&Gの予約録画等を行えるツール．自宅サーバー等に配置でき，WEB上から予約ができる．',
+            '超A&Gの予約録画等を行えるツール。自宅サーバー等に配置でき、WEB上から予約ができる。',
           tag: ['Node.js', 'Express.js', 'Nuxt.js', 'Docker']
         },
         {

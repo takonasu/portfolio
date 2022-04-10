@@ -6,7 +6,7 @@
           趣味
         </p>
         <p class="subtitle">
-          趣味について書いていくページです．逐次更新予定．
+          趣味について書いていくページです。逐次更新予定。
         </p>
         <div class="content">
           <p class="subtitle">
@@ -216,6 +216,13 @@ export default {
           name: `ラブライブ！サンシャイン!! Aqours 6th LoveLive! ～KU-RU-KU-RU Rock 'n' Roll TOUR～`,
           link: 'https://www.lovelive-anime.jp/uranohoshi/sp_6thlive.php',
           place: '埼玉・メットライフドーム',
+          memo: ''
+        },
+        {
+          day: '2022-03-13T00:00:00+09:00',
+          name: `ラブライブ！スーパースター!! Liella! 2nd LoveLive! ～What a Wonderful Dream!!～ 横浜公演 Day2`,
+          link: 'https://www.lovelive-anime.jp/yuigaoka/live/sp_2ndlive/',
+          place: 'ぴあアリーナMM',
           memo: ''
         }
       ]
