@@ -224,6 +224,20 @@ export default {
           link: 'https://www.lovelive-anime.jp/yuigaoka/live/sp_2ndlive/',
           place: 'ぴあアリーナMM',
           memo: ''
+        },
+        {
+          day: '2022-06-04T00:00:00+09:00',
+          name: `ラブライブ！スーパースター!! Liella! 2nd LoveLive! ～What a Wonderful Dream!!～ 大阪公演 with Yuigaoka Girls Band Day1`,
+          link: 'https://www.lovelive-anime.jp/yuigaoka/live/sp_2ndlive/',
+          place: '大阪城ホール',
+          memo: ''
+        },
+        {
+          day: '2022-06-05T00:00:00+09:00',
+          name: `ラブライブ！スーパースター!! Liella! 2nd LoveLive! ～What a Wonderful Dream!!～ 大阪公演 with Yuigaoka Girls Band Day2`,
+          link: 'https://www.lovelive-anime.jp/yuigaoka/live/sp_2ndlive/',
+          place: '大阪城ホール',
+          memo: ''
         }
       ]
     }
