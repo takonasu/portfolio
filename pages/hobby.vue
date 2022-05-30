@@ -19,6 +19,7 @@
           <p class="subtitle">
             現地参加したライブ一覧
           </p>
+          <p>計{{ participatedEvents.length }}公演</p>
 
           <div
             v-for="(item, key) of participatedEvents"
@@ -213,15 +214,22 @@ export default {
         },
         {
           day: '2022-03-06T00:00:00+09:00',
-          name: `ラブライブ！サンシャイン!! Aqours 6th LoveLive! ～KU-RU-KU-RU Rock 'n' Roll TOUR～`,
+          name: `ラブライブ！サンシャイン!! Aqours 6th LoveLive! ～KU-RU-KU-RU Rock 'n' Roll TOUR～ SUNNY STAGE Day2`,
           link: 'https://www.lovelive-anime.jp/uranohoshi/sp_6thlive.php',
-          place: '埼玉・メットライフドーム',
+          place: '埼玉・ベルーナドーム',
           memo: ''
         },
         {
           day: '2022-03-13T00:00:00+09:00',
           name: `ラブライブ！スーパースター!! Liella! 2nd LoveLive! ～What a Wonderful Dream!!～ 横浜公演 Day2`,
           link: 'https://www.lovelive-anime.jp/yuigaoka/live/sp_2ndlive/',
+          place: 'ぴあアリーナMM',
+          memo: ''
+        },
+        {
+          day: '2022-05-28T00:00:00+09:00',
+          name: `MTV Unplugged Presents: LoveLive! Superstar!! Liella! Day2`,
+          link: 'https://www.lovelive-anime.jp/yuigaoka/live/sp_mtv/',
           place: 'ぴあアリーナMM',
           memo: ''
         },
@@ -237,6 +245,27 @@ export default {
           name: `ラブライブ！スーパースター!! Liella! 2nd LoveLive! ～What a Wonderful Dream!!～ 大阪公演 with Yuigaoka Girls Band Day2`,
           link: 'https://www.lovelive-anime.jp/yuigaoka/live/sp_2ndlive/',
           place: '大阪城ホール',
+          memo: ''
+        },
+        {
+          day: '2022-06-25T00:00:00+09:00',
+          name: `ラブライブ！サンシャイン!! Aqours 6th LoveLive! ～KU-RU-KU-RU Rock 'n' Roll TOUR～ WINDY STAGE Day1`,
+          link: 'https://www.lovelive-anime.jp/uranohoshi/sp_6thlive_w.php',
+          place: '東京ドーム',
+          memo: ''
+        },
+        {
+          day: '2022-06-26T00:00:00+09:00',
+          name: `ラブライブ！サンシャイン!! Aqours 6th LoveLive! ～KU-RU-KU-RU Rock 'n' Roll TOUR～ WINDY STAGE Day2`,
+          link: 'https://www.lovelive-anime.jp/uranohoshi/sp_6thlive_w.php',
+          place: '東京ドーム',
+          memo: ''
+        },
+        {
+          day: '2022-09-10T00:00:00+09:00',
+          name: `ラブライブ！虹ヶ咲学園スクールアイドル同好会 5th Live! 虹が咲く場所 Colorful Dreams! Colorful Smiles!公演 Day1`,
+          link: 'https://www.lovelive-anime.jp/nijigasaki/sp_5thlive.php',
+          place: '東京ガーデンシアター',
           memo: ''
         }
       ]
