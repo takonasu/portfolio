@@ -8,7 +8,7 @@ const Home: NextPage = () => {
 	return (
 		<div className={styles.container}>
 			<Head>
-				<title>Takonasu's Portfolio</title>
+				<title>Takonasu&apos;s Portfolio</title>
 				<link rel="icon" href="/favicon.ico" />
 
 				<meta property="og:url" content={process.env.HOST_URL ?? process.env.VERCEL_URL} />

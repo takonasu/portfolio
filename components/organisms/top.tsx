@@ -5,7 +5,7 @@ type Props = {};
 export const Top: React.FC<Props> = ({}) => {
 	return (
 		<div className={styles.main}>
-			<h1>Takonasu's Portfolio</h1>
+			<h1>Takonasu&apos;s Portfolio</h1>
 		</div>
 	);
 };
