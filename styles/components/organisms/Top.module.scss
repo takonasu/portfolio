@@ -1,0 +1,8 @@
+@use "../../variables" as var;
+
+.main{
+    margin:0;
+    background-color: var.$DefaultBackgroundColor;
+    height: 100vh;
+    width: 40vw;
+}
