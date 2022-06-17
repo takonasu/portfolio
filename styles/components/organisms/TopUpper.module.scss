@@ -1,46 +1,53 @@
-@use "../../variables" as var;
+@use '../../variables' as var;
 
-.main{
-    height: 100vh;
+.main {
+  height: 100vh;
+  background-color: var.$DefaultBackgroundColor;
+  background: url(../../../public/images/background.png);
+  background-size: 10%;
+
+  .top {
+    position: absolute;
+    right: 0;
+    top: 0;
     background-color: var.$DefaultBackgroundColor;
-    background: url(../../../public/images/background.png);
-    background-size: 10%;
-    .top{
-        position: absolute;
-        right: 0;
-        top: 0;
-        background-color: var.$DefaultBackgroundColor;
-        height:100vh;
-        width: 62vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .titleFrame{
-            text-align: right;
-        }
-        .topMenuFrame{
-            display: inline-flex;
-            height: 25vh;
-            flex-direction: column;
-            justify-content: space-between;
-            h1{
-                margin: 0;
-                font-size: 4vw;
-                color: var.$DefaultCharacterColor;
-            }
-            p{
-                margin: 0;
-                font-size: 1vw;
-            }
-            .linksFrame{
-                display: inline-flex;
-                justify-content: space-between;
-                font-size: 2vw;
-                a{
-                    color: var.$DefaultCharacterColor;
-                    text-decoration: none;
-                }
-            }
-        }
+    height: 100vh;
+    width: 62vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .titleFrame {
+      text-align: right;
     }
+
+    .topMenuFrame {
+      display: inline-flex;
+      height: 25vh;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h1 {
+        margin: 0;
+        font-size: 4vw;
+        color: var.$DefaultCharacterColor;
+      }
+
+      p {
+        margin: 0;
+        font-size: 1vw;
+      }
+
+      .linksFrame {
+        display: inline-flex;
+        justify-content: space-between;
+        font-size: 2vw;
+
+        a {
+          color: var.$DefaultCharacterColor;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }

@@ -1,5 +1,5 @@
-@use "./variables" as var;
-@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@use './variables' as var;
+@import 'https://fonts.googleapis.com/earlyaccess/notosansjp.css';
 
 html,
 body {
@@ -8,17 +8,19 @@ body {
   color: var.$DefaultCharacterColor;
   font-family: 'Noto Sans', sans-serif;
   background-image: url(../public/images/background.png);
-  background-color:rgba(255,255,255,0.8);
-  background-blend-mode:lighten;
+  background-color: rgb(255 255 255 / 80%);
+  background-blend-mode: lighten;
   background-size: 10%;
 }
 
-h1{
+h1 {
   color: var.$StartTrueDreams;
 }
-h2{
+
+h2 {
   color: var.$StartTrueDreams2;
 }
+
 a {
   color: var.$StartTrueDreams2;
   text-decoration: underline;
