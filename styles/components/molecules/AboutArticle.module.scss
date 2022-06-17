@@ -1,0 +1,19 @@
+@use '../../variables' as var;
+
+.main {
+  margin: 1.5rem 0;
+  text-align: left;
+
+  h2 {
+    margin: 0;
+  }
+
+  .articleContent{
+    margin: 0;
+    padding: 0 1rem;
+    
+    p{
+      margin: 0;
+    }
+  }
+}

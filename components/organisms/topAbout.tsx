@@ -1,5 +1,7 @@
 import styles from '../../styles/components/organisms/TopAbout.module.scss';
 import Image from 'next/image';
+import AboutArticle from '../molecules/aboutArticle';
+import NormalList from '../molecules/normalList';
 
 type Props = {};
 
@@ -20,34 +22,23 @@ export const TopAbout: React.FC<Props> = ({}) => {
 					</p>
 				</div>
 			</div>
-			<div className={styles.aboutArticles}>
-				<div>
-					<h2>自己紹介</h2>
+			<div>
+				<AboutArticle title="自己紹介">
 					<p>
 						コンピュータネットワークの研究をしている筑波大学院生です。
+						<br />
 						モノづくりが趣味で電子工作やWEBアプリケーションを作成したりなど幅広く扱っています。
-						のべ12,000人以上が利用している筑波大学専用時間割アプリ <a href="https://www.twinte.net">Twin:te</a>{' '}
+						<br />
+						のべ12,000人以上が利用している筑波大学専用時間割アプリ <a href="https://www.twinte.net">Twin:te</a>
 						(ついんて)の発起人で代表を務めています。
 					</p>
-				</div>
-				<div>
-					<h2>自己紹介</h2>
-					<p>
-						コンピュータネットワークの研究をしている筑波大学院生です。
-						モノづくりが趣味で電子工作やWEBアプリケーションを作成したりなど幅広く扱っています。
-						のべ12,000人以上が利用している筑波大学専用時間割アプリ <a href="https://www.twinte.net">Twin:te</a>{' '}
-						(ついんて)の発起人で代表を務めています。
-					</p>
-				</div>
-				<div>
-					<h2>自己紹介</h2>
-					<p>
-						コンピュータネットワークの研究をしている筑波大学院生です。
-						モノづくりが趣味で電子工作やWEBアプリケーションを作成したりなど幅広く扱っています。
-						のべ12,000人以上が利用している筑波大学専用時間割アプリ <a href="https://www.twinte.net">Twin:te</a>{' '}
-						(ついんて)の発起人で代表を務めています。
-					</p>
-				</div>
+				</AboutArticle>
+				<AboutArticle title="免許・資格">
+					<NormalList day="2021年6月">ネットワークスペシャリスト 試験合格</NormalList>
+				</AboutArticle>
+				<AboutArticle title="経歴">
+					<NormalList day="2020年6月-2022年3月">ナイル</NormalList>
+				</AboutArticle>
 			</div>
 		</div>
 	);
