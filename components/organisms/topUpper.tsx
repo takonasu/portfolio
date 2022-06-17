@@ -1,8 +1,8 @@
-import styles from '../../styles/components/organisms/Top.module.scss';
+import styles from '../../styles/components/organisms/TopUpper.module.scss';
 
 type Props = {};
 
-export const Top: React.FC<Props> = ({}) => {
+export const TopUpper: React.FC<Props> = ({}) => {
 	return (
 		<div className={styles.main}>
 			<div className={styles.top}>
@@ -16,7 +16,7 @@ export const Top: React.FC<Props> = ({}) => {
 							<a href="">About</a>
 						</div>
 						<div>
-							<a href="">Works</a>
+							<a href="./work">Works</a>
 						</div>
 						<div>
 							<a href="">Links</a>
@@ -31,4 +31,4 @@ export const Top: React.FC<Props> = ({}) => {
 	);
 };
 
-export default Top;
+export default TopUpper;

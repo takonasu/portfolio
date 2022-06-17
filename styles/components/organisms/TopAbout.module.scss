@@ -1,0 +1,33 @@
+@use "../../variables" as var;
+
+.aboutFrame{
+    text-align: center;
+
+    .aboutArticles{
+        text-align: left;
+        h2{
+            margin: 0;
+        }
+        p{
+            margin: 0;
+            padding: 0 1rem;
+        }
+    }
+
+    .title{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .myName{
+            h1,h2{
+                margin:0;
+                color: var.$DefaultCharacterColor;
+            }
+        };
+        .myImage{
+            img{
+                border-radius: 50%;
+            }
+        }
+    }
+}
