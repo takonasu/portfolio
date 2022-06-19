@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
 import TopUpper from '../components/organisms/topUpper';
-import TopMain from '../components/organisms/topMain';
+import TopMain from '../components/templates/topMain';
 import Footer from '../components/organisms/footer';
 
 const Home: NextPage = () => {

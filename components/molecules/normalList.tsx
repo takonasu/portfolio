@@ -11,7 +11,7 @@ export const NormalList: React.FC<Props> = ({ day, title, detail }) => {
 			<div className={styles.day}>{day}</div>
 			<div className={styles.contents}>
 				<p>{title}</p>
-				{detail ? <p>{detail}</p> : <></>}
+				{detail ? <p className={styles.detail}>{detail}</p> : <></>}
 			</div>
 		</div>
 	);
