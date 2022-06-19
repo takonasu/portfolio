@@ -248,6 +248,13 @@ export default {
           memo: ''
         },
         {
+          day: '2022-06-19T00:00:00+09:00',
+          name: `ラブライブ！スーパースター!! Liella! ライブ＆ファンミーティングツアー ～Welcome to Yuigaoka!!～ 東京公演 Day1 1回目`,
+          link: 'https://www.lovelive-anime.jp/yuigaoka/live/sp_fmt/',
+          place: '東京ガーデンシアター',
+          memo: ''
+        },
+        {
           day: '2022-06-25T00:00:00+09:00',
           name: `ラブライブ！サンシャイン!! Aqours 6th LoveLive! ～KU-RU-KU-RU Rock 'n' Roll TOUR～ WINDY STAGE Day1`,
           link: 'https://www.lovelive-anime.jp/uranohoshi/sp_6thlive_w.php',
