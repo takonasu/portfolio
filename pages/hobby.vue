@@ -24,13 +24,13 @@
           <div
             v-for="(item, key) of participatedEvents"
             :key="key"
-            style="margin-bottom:1rem;"
+            style="margin-bottom: 1rem"
           >
             <header>
               {{ $dayjs(item.day).format('YYYY年MM月DD日 (dd)') }}
             </header>
-            <div style="padding-left:1rem;">
-              <span style="font-weight:bold">{{ item.name }}</span>
+            <div style="padding-left: 1rem">
+              <span style="font-weight: bold">{{ item.name }}</span>
               <br />
               {{ item.place }}
               <br />
@@ -248,7 +248,7 @@ export default {
           memo: ''
         },
         {
-          day: '2022-06-19T00:00:00+09:00',
+          day: '2022-06-18T00:00:00+09:00',
           name: `ラブライブ！スーパースター!! Liella! ライブ＆ファンミーティングツアー ～Welcome to Yuigaoka!!～ 東京公演 Day1 1回目`,
           link: 'https://www.lovelive-anime.jp/yuigaoka/live/sp_fmt/',
           place: '東京ガーデンシアター',
