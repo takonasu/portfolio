@@ -1,13 +1,13 @@
-import styles from '../../styles/components/organisms/TopWork.module.scss';
+import styles from '../../styles/components/organisms/TopLink.module.scss';
 import MainArticle from '../molecules/mainArticle';
 import Card from '../molecules/card';
 
 type Props = {};
 
-export const TopWork: React.FC<Props> = ({}) => {
+export const TopLink: React.FC<Props> = ({}) => {
 	return (
-		<div className={styles.workFrame}>
-			<h1>Works</h1>
+		<div className={styles.linkFrame}>
+			<h1>Links</h1>
 			<MainArticle>
 				<div className={styles.workCards}>
 					<Card
@@ -34,4 +34,4 @@ export const TopWork: React.FC<Props> = ({}) => {
 	);
 };
 
-export default TopWork;
+export default TopLink;

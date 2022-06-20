@@ -1,12 +1,12 @@
 import { ReactNode } from 'react';
-import styles from '../../styles/components/molecules/AboutArticle.module.scss';
+import styles from '../../styles/components/molecules/MainArticle.module.scss';
 
 type Props = {
 	title?: string;
 	children: ReactNode;
 };
 
-export const AboutArticle: React.FC<Props> = ({ title, children }) => {
+export const MainArticle: React.FC<Props> = ({ title, children }) => {
 	return (
 		<div className={styles.main}>
 			{title ? <h2>{title}</h2> : <></>}
@@ -15,4 +15,4 @@ export const AboutArticle: React.FC<Props> = ({ title, children }) => {
 	);
 };
 
-export default AboutArticle;
+export default MainArticle;
