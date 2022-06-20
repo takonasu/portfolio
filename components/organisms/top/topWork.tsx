@@ -30,6 +30,11 @@ export const TopWork: React.FC<Props> = ({}) => {
 					/>
 				</div>
 			</MainArticle>
+			<MainArticle>
+				<div className={styles.allWorks}>
+					<a href="./work">すべての作品 &gt;</a>
+				</div>
+			</MainArticle>
 		</div>
 	);
 };
