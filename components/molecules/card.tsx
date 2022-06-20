@@ -13,7 +13,9 @@ export const Card: React.FC<Props> = ({ image, title, detail, link }) => {
 			<div className={styles.image}>
 				<Image src={image} width={300} height={150} layout="responsive" objectFit="contain" alt="work image" />
 			</div>
-			<div className={styles.title}>{title}</div>
+			<div className={styles.title}>
+				<p>{title}</p>
+			</div>
 			<div className={styles.detail}>
 				<p>{detail}</p>
 			</div>

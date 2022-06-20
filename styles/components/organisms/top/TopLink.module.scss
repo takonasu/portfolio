@@ -1,6 +1,6 @@
-@use '../../variables' as var;
+@use '../../../variables' as var;
 
-.workCards {
+.linkCards {
   display: flex;
   justify-content: space-between;
 }

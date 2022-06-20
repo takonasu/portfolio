@@ -1,31 +1,29 @@
-import styles from '../../styles/components/molecules/Card.module.scss';
-import Image from 'next/image';
+import styles from '../../styles/components/molecules/LinkCard.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 type Props = {
-	icon: string;
+	icon: IconProp;
 	title: string;
 	detail: string;
 	link: string;
 };
+
 export const LinkCard: React.FC<Props> = ({ icon, title, detail, link }) => {
 	return (
-		<div className={styles.main}>
-			<div className={styles.image}>
-				{/* <Image src={image} width={300} height={150} layout="responsive" objectFit="contain" alt="work image" /> */}
-			</div>
-			<div className={styles.title}>{title}</div>
+		<a href={link} className={styles.main}>
+			<header>
+				<div className={styles.icon}>
+					<FontAwesomeIcon icon={icon} />
+				</div>
+				<div className={styles.title}>
+					<p>{title}</p>
+				</div>
+			</header>
 			<div className={styles.detail}>
 				<p>{detail}</p>
 			</div>
-
-			{link ? (
-				<div className={styles.link}>
-					<a href={link}>詳細 &gt;</a>
-				</div>
-			) : (
-				<></>
-			)}
-		</div>
+		</a>
 	);
 };
 

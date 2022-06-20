@@ -1,7 +1,7 @@
 import styles from '../../styles/components/templates/TopMain.module.scss';
-import TopAbout from '../organisms/topAbout';
-import TopWork from '../organisms/topWork';
-import TopLink from '../organisms/topLink';
+import TopAbout from '../organisms/top/topAbout';
+import TopWork from '../organisms/top/topWork';
+import TopLink from '../organisms/top/topLink';
 
 type Props = {};
 

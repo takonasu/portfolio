@@ -1,4 +1,4 @@
-import styles from '../../styles/components/organisms/TopUpper.module.scss';
+import styles from '../../../styles/components/organisms/top/TopUpper.module.scss';
 
 type Props = {};
 

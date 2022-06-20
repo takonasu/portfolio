@@ -1,9 +1,9 @@
-@use '../../variables' as var;
+@use '../../../variables' as var;
 
 .main {
   height: 100vh;
   background-color: var.$DefaultBackgroundColor;
-  background: url(../../../public/images/background.png);
+  background: url(/images/background.png);
   background-size: 10%;
 
   .top {

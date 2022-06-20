@@ -1,7 +1,7 @@
-import styles from '../../styles/components/organisms/TopAbout.module.scss';
+import styles from '../../../styles/components/organisms/top/TopAbout.module.scss';
 import Image from 'next/image';
-import MainArticle from '../molecules/mainArticle';
-import NormalList from '../molecules/normalList';
+import MainArticle from '../../molecules/mainArticle';
+import NormalList from '../../molecules/normalList';
 
 type Props = {};
 
