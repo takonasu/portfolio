@@ -9,7 +9,6 @@
   background-color: var.$DefaultBackgroundColor;
   box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
   padding: 1rem;
-  font-weight: initial;
 
   header {
     display: flex;
@@ -28,6 +27,7 @@
 
   .detail {
     margin: 0.5rem 0;
+    font-weight: initial;
   }
 
 }
