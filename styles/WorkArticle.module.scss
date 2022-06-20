@@ -1,0 +1,8 @@
+@use './variables' as var;
+
+// work用記事のスタイル
+.article {
+  img {
+    max-width: 50%;
+  }
+}

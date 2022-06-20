@@ -1,3 +1,5 @@
+import styles from '../../styles/WorkArticle.module.scss';
+import ArticleFrame from '../../components/organisms/articleFrame';
 import { GetStaticProps } from 'next';
 import { work } from '../../types/cms-types';
 import { client } from '../../libs/client';
@@ -6,15 +8,16 @@ type Props = {
 	article: work;
 };
 
-export default function Article({ article }: Props) {
+export default function WorkArticle({ article }: Props) {
 	return (
-		<div className="bg-gray-50">
+		<ArticleFrame>
 			<div
+				className={styles.article}
 				dangerouslySetInnerHTML={{
 					__html: `${article.body}`
 				}}
 			/>
-		</div>
+		</ArticleFrame>
 	);
 }
 

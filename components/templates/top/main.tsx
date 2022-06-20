@@ -1,4 +1,5 @@
 import styles from '../../../styles/components/templates/top/Main.module.scss';
+import ArticleFrame from '../../organisms/articleFrame';
 import TopAbout from '../../organisms/top/topAbout';
 import TopWork from '../../organisms/top/topWork';
 import TopLink from '../../organisms/top/topLink';
@@ -7,7 +8,7 @@ type Props = {};
 
 export const Main: React.FC<Props> = ({}) => {
 	return (
-		<div className={styles.main}>
+		<ArticleFrame>
 			<div className={styles.contentFrame} id="About">
 				<TopAbout />
 			</div>
@@ -17,7 +18,7 @@ export const Main: React.FC<Props> = ({}) => {
 			<div className={styles.contentFrame} id="Links">
 				<TopLink />
 			</div>
-		</div>
+		</ArticleFrame>
 	);
 };
 

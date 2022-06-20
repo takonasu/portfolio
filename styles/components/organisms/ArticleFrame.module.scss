@@ -1,0 +1,19 @@
+@use '../../variables' as var;
+
+.main {
+  margin: 2rem auto;
+  padding: 2rem;
+  width: 100vw;
+  min-height: 80vh;
+  max-width: 980px;
+  background-color: var.$DefaultBackgroundColor;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+
+  .topAbout {
+    text-align: center;
+  }
+
+  a {
+    font-weight: 500;
+  }
+}

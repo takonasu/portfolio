@@ -1,6 +1,7 @@
-import { work } from '../../../types/cms-types';
 import styles from '../../../styles/components/templates/works/Main.module.scss';
+import ArticleFrame from '../../organisms/articleFrame';
 import Card from '../../molecules/card';
+import { work } from '../../../types/cms-types';
 
 type Props = {
 	works: [work];
@@ -8,7 +9,7 @@ type Props = {
 
 export const Main: React.FC<Props> = ({ works }) => {
 	return (
-		<div className={styles.main}>
+		<ArticleFrame>
 			<div className={styles.workCards}>
 				{works.map((elm) => {
 					return (
@@ -22,7 +23,7 @@ export const Main: React.FC<Props> = ({ works }) => {
 					);
 				})}
 			</div>
-		</div>
+		</ArticleFrame>
 	);
 };
 
