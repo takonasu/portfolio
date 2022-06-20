@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from '../../styles/components/molecules/Card.module.scss';
 import Image from 'next/image';
 
@@ -22,7 +23,9 @@ export const Card: React.FC<Props> = ({ image, title, detail, link }) => {
 
 			{link ? (
 				<div className={styles.link}>
-					<a href={link}>詳細 &gt;</a>
+					<Link href={link}>
+						<a>詳細 &gt;</a>
+					</Link>
 				</div>
 			) : (
 				<></>

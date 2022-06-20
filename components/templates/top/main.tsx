@@ -1,11 +1,11 @@
-import styles from '../../styles/components/templates/TopMain.module.scss';
-import TopAbout from '../organisms/top/topAbout';
-import TopWork from '../organisms/top/topWork';
-import TopLink from '../organisms/top/topLink';
+import styles from '../../../styles/components/templates/top/Main.module.scss';
+import TopAbout from '../../organisms/top/topAbout';
+import TopWork from '../../organisms/top/topWork';
+import TopLink from '../../organisms/top/topLink';
 
 type Props = {};
 
-export const TopMain: React.FC<Props> = ({}) => {
+export const Main: React.FC<Props> = ({}) => {
 	return (
 		<div className={styles.main}>
 			<div className={styles.contentFrame} id="About">
@@ -21,4 +21,4 @@ export const TopMain: React.FC<Props> = ({}) => {
 	);
 };
 
-export default TopMain;
+export default Main;

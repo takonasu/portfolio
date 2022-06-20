@@ -2,24 +2,16 @@ import type { NextPage } from 'next';
 import Link from 'next/link';
 import { client } from '../../libs/client';
 import { work } from '../../types/cms-types';
+import Main from '../../components/templates/works/main';
 
 type Props = {
 	works: [work];
 };
 
 const Home = ({ works }: Props) => {
-	// console.log(works);
 	return (
 		<div>
-			<ul>
-				{works.map((work) => (
-					<li key={work.id}>
-						<Link href={`/work/${work.id}`}>
-							<a>{work.title}</a>
-						</Link>
-					</li>
-				))}
-			</ul>
+			<Main works={works} />
 		</div>
 	);
 };

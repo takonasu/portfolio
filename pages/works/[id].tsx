@@ -23,7 +23,7 @@ export const getStaticPaths = async () => {
 		contents: [work];
 	};
 	const data: DataType = await client.get({ endpoint: 'work' });
-	const paths = data.contents.map((content) => `/work/${content.id}`);
+	const paths = data.contents.map((content) => `/works/${content.id}`);
 	return { paths, fallback: false };
 };
 

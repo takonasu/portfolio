@@ -2,8 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
 import TopUpper from '../components/organisms/top/topUpper';
-import TopMain from '../components/templates/topMain';
-import Footer from '../components/organisms/footer';
+import Main from '../components/templates/top/main';
 
 const Home: NextPage = () => {
 	return (
@@ -24,8 +23,7 @@ const Home: NextPage = () => {
 			</Head>
 
 			<TopUpper />
-			<TopMain />
-			<Footer />
+			<Main />
 		</div>
 	);
 };
