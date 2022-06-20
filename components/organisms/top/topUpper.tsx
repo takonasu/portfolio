@@ -1,4 +1,5 @@
 import styles from '../../../styles/components/organisms/top/TopUpper.module.scss';
+import { Link as Scroll } from 'react-scroll';
 
 type Props = {};
 
@@ -13,13 +14,19 @@ export const TopUpper: React.FC<Props> = ({}) => {
 					</div>
 					<div className={styles.linksFrame}>
 						<div>
-							<a href="">About</a>
+							<Scroll to="About" smooth={true} duration={600}>
+								About
+							</Scroll>
 						</div>
 						<div>
-							<a href="./work">Works</a>
+							<Scroll to="Works" smooth={true} duration={600}>
+								Works
+							</Scroll>
 						</div>
 						<div>
-							<a href="">Links</a>
+							<Scroll to="Links" smooth={true} duration={600}>
+								Links
+							</Scroll>
 						</div>
 						<div>
 							<a href="">Contact</a>

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from '../../../styles/components/organisms/top/TopWork.module.scss';
 import MainArticle from '../../molecules/mainArticle';
 import Card from '../../molecules/card';
@@ -32,7 +33,9 @@ export const TopWork: React.FC<Props> = ({}) => {
 			</MainArticle>
 			<MainArticle>
 				<div className={styles.allWorks}>
-					<a href="./work">すべての作品 &gt;</a>
+					<Link href="./work">
+						<a>すべての作品 &gt;</a>
+					</Link>
 				</div>
 			</MainArticle>
 		</div>

@@ -8,13 +8,13 @@ type Props = {};
 export const TopMain: React.FC<Props> = ({}) => {
 	return (
 		<div className={styles.main}>
-			<div className={styles.contentFrame}>
+			<div className={styles.contentFrame} id="About">
 				<TopAbout />
 			</div>
-			<div className={styles.contentFrame}>
+			<div className={styles.contentFrame} id="Works">
 				<TopWork />
 			</div>
-			<div className={styles.contentFrame}>
+			<div className={styles.contentFrame} id="Links">
 				<TopLink />
 			</div>
 		</div>
