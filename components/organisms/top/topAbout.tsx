@@ -11,7 +11,14 @@ export const TopAbout: React.FC<Props> = ({}) => {
 			<h1>About</h1>
 			<div className={styles.title}>
 				<div className={styles.myImage}>
-					<Image src="/images/profile.jpeg" width={200} height={200} objectFit="contain" alt="profile image" />
+					<Image
+						src="/images/profile.jpeg"
+						width={200}
+						height={200}
+						layout="responsive"
+						objectFit="contain"
+						alt="profile image"
+					/>
 				</div>
 				<div className={styles.myName}>
 					<h1>Takanashi Yuya</h1>
@@ -56,7 +63,7 @@ export const TopAbout: React.FC<Props> = ({}) => {
 				/>
 				<NormalList day="2018年4月 -" title="某学習塾 アルバイト" detail="塾講師として小学・中学・高校生を指導" />
 				<NormalList day="2018年4月 - 2022年3月" title="筑波大学情報学群情報科学類" />
-				<NormalList day="2012年4月 - 2018年03月" title="茨城県立並木中等教育学校" />
+				<NormalList day="2012年4月 - 2018年3月" title="茨城県立並木中等教育学校" />
 			</MainArticle>
 		</div>
 	);

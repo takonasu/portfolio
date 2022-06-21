@@ -1,4 +1,5 @@
 @use '../../../variables' as var;
+@use '../../../_breakpoint' as bp;
 
 .workCards {
   display: flex;
@@ -7,4 +8,10 @@
 
 .allWorks {
   text-align: right;
+}
+
+@include bp.mq(md) {
+  .workCards {
+    flex-direction: column;
+  }
 }

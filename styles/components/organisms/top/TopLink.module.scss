@@ -1,7 +1,13 @@
 @use '../../../variables' as var;
+@use '../../../_breakpoint' as bp;
 
 .linkCards {
   display: flex;
   justify-content: space-between;
 }
 
+@include bp.mq(md) {
+  .linkCards {
+    flex-direction: column;
+  }
+}
