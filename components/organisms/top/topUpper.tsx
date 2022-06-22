@@ -29,7 +29,9 @@ export const TopUpper: React.FC<Props> = ({}) => {
 							</Scroll>
 						</div>
 						<div>
-							<a href="">Contact</a>
+							<Scroll to="Contact" smooth={true} duration={600}>
+								Contact
+							</Scroll>
 						</div>
 					</div>
 				</div>
