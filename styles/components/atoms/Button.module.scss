@@ -1,0 +1,16 @@
+@use '../../variables' as var;
+
+.main {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var.$DefaultBackgroundColor;
+    border: 2px solid var.$StartTrueDreams2;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 10px;
+    a {
+        text-decoration: none;
+    }
+}
