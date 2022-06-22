@@ -2,6 +2,7 @@
 @use '../../../_breakpoint' as bp;
 
 .main {
+  position: relative;
   height: 100vh;
   background-color: var.$DefaultBackgroundColor;
   background: url(/images/background.png);
@@ -55,7 +56,7 @@
 
 @include bp.mq(sm) {
   .main {
-    height: 98vh;
+    height: 100vh;
     background-size: 30%;
     .top {
       height: 80vh;
@@ -73,6 +74,9 @@
             margin: 0;
             font-size: 30px;
             color: var.$DefaultCharacterColor;
+          }
+          p {
+            font-size: 10px;
           }
         }
 
