@@ -1,16 +1,16 @@
 @use '../../variables' as var;
-@use '../../_breakpoint' as bp;
 
 .main {
   display: block;
   color: inherit;
   text-decoration: none;
   position: relative;
-  width: 30%;
   background-color: var.$DefaultBackgroundColor;
   box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
   padding: 1rem;
   margin: 1rem 0;
+  height: 100%;
+  width: 100%;
 
   header {
     display: flex;
@@ -30,14 +30,5 @@
   .detail {
     margin: 0.5rem 0;
     font-weight: initial;
-  }
-
-  @include bp.mq(md) {
-    width: 100%;
-
-    .image {
-      height: 150px;
-      width: 300px;
-    }
   }
 }

@@ -4,6 +4,11 @@
 .workCards {
   display: flex;
   justify-content: space-between;
+
+  .card {
+    width: 30%;
+    min-height: 100%;
+  }
 }
 
 .allWorks {
@@ -13,5 +18,8 @@
 @include bp.mq(md) {
   .workCards {
     flex-direction: column;
+    .card {
+      width: 100%;
+    }
   }
 }

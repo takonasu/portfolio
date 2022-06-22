@@ -12,24 +12,30 @@ export const TopLink: React.FC<Props> = ({}) => {
 			<h1>Links</h1>
 			<MainArticle>
 				<div className={styles.linkCards}>
-					<LinkCard
-						icon={faGithub}
-						title="GitHub"
-						detail="各種作品のソースコードを公開しています。"
-						link="https://github.com/takonasu"
-					/>
-					<LinkCard
-						icon={faTwitter}
-						title="Twitter"
-						detail="一言日記です。技術的な話は特にしていません。"
-						link="https://twitter.com/ITF_tako"
-					/>
-					<LinkCard
-						icon={faPencil}
-						title="Qiita"
-						detail="技術的な小ネタ等の記事を公開しています。"
-						link="https://qiita.com/takonasu"
-					/>
+					<div className={styles.linkCard}>
+						<LinkCard
+							icon={faGithub}
+							title="GitHub"
+							detail="各種作品のソースコードを公開しています。"
+							link="https://github.com/takonasu"
+						/>
+					</div>
+					<div className={styles.linkCard}>
+						<LinkCard
+							icon={faTwitter}
+							title="Twitter"
+							detail="一言日記です。技術的な話は特にしていません。"
+							link="https://twitter.com/ITF_tako"
+						/>
+					</div>
+					<div className={styles.linkCard}>
+						<LinkCard
+							icon={faPencil}
+							title="Qiita"
+							detail="技術的な小ネタ等の記事を公開しています。"
+							link="https://qiita.com/takonasu"
+						/>
+					</div>
 				</div>
 			</MainArticle>
 		</div>

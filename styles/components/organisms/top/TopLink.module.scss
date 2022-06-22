@@ -4,10 +4,16 @@
 .linkCards {
   display: flex;
   justify-content: space-between;
+  .linkCard {
+    width: 30%;
+  }
 }
 
-@include bp.mq(md) {
+@include bp.mq(sm) {
   .linkCards {
     flex-direction: column;
+    .linkCard {
+      width: 100%;
+    }
   }
 }
