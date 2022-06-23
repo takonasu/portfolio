@@ -1,0 +1,9 @@
+@use '../../variables' as var;
+
+.main {
+    margin: 0;
+    color: var.$StartTrueDreams2;
+    .span {
+        margin: 0.5rem;
+    }
+}
