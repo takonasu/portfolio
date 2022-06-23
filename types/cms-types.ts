@@ -28,23 +28,61 @@ export type work<T = 'get'> = Structure<
 		 * 本文
 		 */
 		body: string;
+		/**
+		 * カテゴリー
+		 */
+		category?: Reference<T, unknown>[];
+		/**
+		 * タグ
+		 */
+		tags?: Reference<T, unknown>[];
+	}
+>;
+
+export type tags<T = 'get'> = Structure<
+	T,
+	{
+		/**
+		 * タグ名
+		 */
+		name: string;
+	}
+>;
+
+export type categories<T = 'get'> = Structure<
+	T,
+	{
+		/**
+		 * カテゴリ名
+		 */
+		name: string;
 	}
 >;
 
 export interface EndPoints {
 	get: {
 		work: work<'get'>;
+		tags: tags<'get'>;
+		categories: categories<'get'>;
 	};
 	gets: {
 		work: work<'gets'>;
+		tags: tags<'gets'>;
+		categories: categories<'gets'>;
 	};
 	post: {
 		work: work<'post'>;
+		tags: tags<'post'>;
+		categories: categories<'post'>;
 	};
 	put: {
 		work: work<'put'>;
+		tags: tags<'put'>;
+		categories: categories<'put'>;
 	};
 	patch: {
 		work: work<'patch'>;
+		tags: tags<'patch'>;
+		categories: categories<'patch'>;
 	};
 }

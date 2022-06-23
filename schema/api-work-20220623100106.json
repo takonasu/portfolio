@@ -1,0 +1,1 @@
+{"apiFields":[{"idValue":"yjv2jIfzIL","fieldId":"title","name":"タイトル","kind":"text","required":true,"isUnique":false},{"fieldId":"body","name":"本文","kind":"richEditor","required":true},{"fieldId":"category","name":"カテゴリー","kind":"relationList"},{"fieldId":"tags","name":"タグ","kind":"relationList"}],"customFields":[]}
