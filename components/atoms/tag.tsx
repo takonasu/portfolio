@@ -8,10 +8,10 @@ type Props = {
 
 export const Tag: React.FC<Props> = ({ label }) => {
 	return (
-		<p className={styles.main}>
+		<span className={styles.main}>
 			<FontAwesomeIcon icon={faTag} />
 			<span className={styles.span}>{label}</span>
-		</p>
+		</span>
 	);
 };
 

@@ -35,7 +35,7 @@ export type work<T = 'get'> = Structure<
 		/**
 		 * タグ
 		 */
-		tags?: Reference<T, unknown>[];
+		tags?: Reference<T, tags>[];
 		/**
 		 * 説明
 		 */

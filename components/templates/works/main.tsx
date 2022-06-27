@@ -19,29 +19,15 @@ export const Main: React.FC<Props> = ({ works, categories, tags }) => {
 					return (
 						<div key={elm.id} className={styles.card}>
 							<Card
-								image="/images/twinte.jpg"
+								image={elm.image.url ?? '/images/twinte.jpg'}
 								title={elm.title}
-								detail={elm.tags.toString()}
+								detail={elm.description}
 								link={`/works/${elm.id}`}
 							/>
 						</div>
 					);
 				})}
 			</div>
-			<div className={styles.workCards}>
-				{categories.map((elm) => {
-					return (
-						<div key={elm.id} className={styles.card}>
-							<Card image="/images/twinte.jpg" title={elm.name} detail="{elm.body}" link={`/works/${elm.id}`} />
-						</div>
-					);
-				})}
-			</div>
-			{/* <div className={styles.workCards}>
-				{tags.map((elm) => {
-					return <Tag key={elm.id} label={elm.name} />;
-				})}
-			</div> */}
 		</ArticleFrame>
 	);
 };

@@ -2,6 +2,7 @@ import styles from '../../styles/WorkArticle.module.scss';
 import ArticleFrame from '../../components/organisms/articleFrame';
 import { GetStaticProps } from 'next';
 import { work } from '../../types/cms-types';
+import Tag from '../../components/atoms/tag';
 import { client } from '../../libs/client';
 
 type Props = {
@@ -11,6 +12,14 @@ type Props = {
 export default function WorkArticle({ article }: Props) {
 	return (
 		<ArticleFrame>
+			<h1>{article.title}</h1>
+			<p>作品作成年：{article.workCreatedDate}</p>
+			<div>
+				タグ：
+				{article.tags.map((tag) => {
+					return <Tag key={tag.id} label={tag.name} />;
+				})}
+			</div>
 			<div
 				className={styles.article}
 				dangerouslySetInnerHTML={{
