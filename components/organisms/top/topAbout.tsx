@@ -40,6 +40,7 @@ export const TopAbout: React.FC<Props> = ({}) => {
 				</p>
 			</MainArticle>
 			<MainArticle title="免許・資格">
+				<NormalList day="2022年6月" title="情報処理安全確保支援士試験 試験合格" />
 				<NormalList day="2021年6月" title="ネットワークスペシャリスト 試験合格" />
 				<NormalList day="2021年1月" title="第二種電気工事士 免許取得" />
 				<NormalList day="2020年12月" title="応用情報技術者  試験合格" />
