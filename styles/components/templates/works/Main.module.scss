@@ -3,4 +3,11 @@
 .workCards {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+
+  .card {
+    margin-bottom: 3rem;
+    width: 30%;
+    min-height: 100%;
+  }
 }
