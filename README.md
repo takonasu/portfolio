@@ -3,6 +3,6 @@ Next.js(TypeScript) + microCMS + Vercel
 
 schemaフォルダにmicroCMSからDLしたスキーマ情報のjsonを入れて
 ```
-yarn microcms-typescript schema types/cms-types.ts
+yarn cms-schema
 ```
 を実行することで、スキーマの型生成をしてくれる。

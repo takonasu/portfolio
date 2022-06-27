@@ -36,6 +36,18 @@ export type work<T = 'get'> = Structure<
 		 * タグ
 		 */
 		tags?: Reference<T, unknown>[];
+		/**
+		 * 説明
+		 */
+		description: string;
+		/**
+		 * 作品作成年
+		 */
+		workCreatedDate: string;
+		/**
+		 * 作品画像
+		 */
+		image: { url: string; width: number; height: number };
 	}
 >;
 
