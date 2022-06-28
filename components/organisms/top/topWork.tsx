@@ -39,7 +39,7 @@ export const TopWork: React.FC<Props> = ({}) => {
 			</MainArticle>
 			<MainArticle>
 				<div className={styles.allWorks}>
-					<Link href="./works">
+					<Link href="/works">
 						<a>すべての作品 &gt;</a>
 					</Link>
 				</div>

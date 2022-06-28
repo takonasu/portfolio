@@ -48,6 +48,10 @@ export type work<T = 'get'> = Structure<
 		 * 作品画像
 		 */
 		image: { url: string; width: number; height: number };
+		/**
+		 * 優先度
+		 */
+		priority: number;
 	}
 >;
 
