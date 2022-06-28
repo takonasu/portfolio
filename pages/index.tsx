@@ -1,10 +1,16 @@
 import type { NextPage } from 'next';
+import { client } from '../libs/client';
+import { work } from '../types/cms-types';
 import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
 import TopUpper from '../components/organisms/top/topUpper';
 import Main from '../components/templates/top/main';
 
-const Home: NextPage = () => {
+type Props = {
+	works: [work];
+};
+
+const Home = ({ works }: Props) => {
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -23,9 +29,18 @@ const Home: NextPage = () => {
 			</Head>
 
 			<TopUpper />
-			<Main />
+			<Main works={works} />
 		</div>
 	);
+};
+
+export const getStaticProps = async () => {
+	const apiResult = await Promise.all([client.get({ endpoint: 'work' })]);
+	return {
+		props: {
+			works: apiResult[0].contents
+		}
+	};
 };
 
 export default Home;

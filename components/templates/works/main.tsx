@@ -23,7 +23,7 @@ export const Main: React.FC<Props> = ({ works, categories, tags }) => {
 					return (
 						<div key={elm.id} className={styles.card}>
 							<Card
-								image={elm.image.url ?? '/images/twinte.jpg'}
+								image={elm.image.url ?? '/images/no_image.png'}
 								title={elm.title}
 								detail={elm.description}
 								link={`/works/${elm.id}`}

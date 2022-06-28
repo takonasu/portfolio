@@ -1,40 +1,35 @@
 import Link from 'next/link';
+import { work } from '../../../types/cms-types';
+import compareDesc from 'date-fns/compareDesc';
 import styles from '../../../styles/components/organisms/top/TopWork.module.scss';
 import MainArticle from '../../molecules/mainArticle';
 import Card from '../../molecules/card';
 
-type Props = {};
+type Props = {
+	works: [work];
+};
 
-export const TopWork: React.FC<Props> = ({}) => {
+export const TopWork: React.FC<Props> = ({ works }: Props) => {
+	const sortedWorks = [...works]
+		.filter((elm) => elm.priority == 0)
+		.sort((a, b) => compareDesc(new Date(a.workCreatedDate), new Date(b.workCreatedDate)));
 	return (
 		<div className={styles.workFrame}>
 			<h1>Works</h1>
 			<MainArticle>
 				<div className={styles.workCards}>
-					<div className={styles.card}>
-						<Card
-							image="/images/twinte.jpg"
-							title="Twin:te"
-							detail="筑波大学生専用の時間割アプリ。延べ12,000人以上が利用している。代表を務めるとともに、技術面では主にiOS全般を担当。"
-							link="https://www.twinte.net"
-						/>
-					</div>
-					<div className={styles.card}>
-						<Card
-							image="/images/AGStation.jpg"
-							title="AGStation(β)"
-							detail="ffmpeg で録画できる超 A&amp;G への予約を支援するツール。WEB フロントエンド経由で予約録画できる。"
-							link="https://github.com/takonasu/AG_Station"
-						/>
-					</div>
-					<div className={styles.card}>
-						<Card
-							image="/images/maumarutime.jpg"
-							title="ロゴジェネレーター"
-							detail="「バジリスクタイム」風のロゴを作ることができる。月1000人の利用者がいる。"
-							link="https://maumarutime.ml"
-						/>
-					</div>
+					{sortedWorks.map((elm) => {
+						return (
+							<div key={elm.id} className={styles.card}>
+								<Card
+									image={elm.image.url ?? '/images/no_image.png'}
+									title={elm.title}
+									detail={elm.description}
+									link={`/works/${elm.id}`}
+								/>
+							</div>
+						);
+					})}
 				</div>
 			</MainArticle>
 			<MainArticle>
