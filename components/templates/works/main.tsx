@@ -3,6 +3,7 @@ import ArticleFrame from '../../organisms/articleFrame';
 import Card from '../../molecules/card';
 import Tag from '../../atoms/tag';
 import { work, categories, tags } from '../../../types/cms-types';
+import compareDesc from 'date-fns/compareDesc';
 
 type Props = {
 	works: [work];
@@ -11,11 +12,14 @@ type Props = {
 };
 
 export const Main: React.FC<Props> = ({ works, categories, tags }) => {
+	const sortedWorks = [...works]
+		.sort((a, b) => compareDesc(new Date(a.workCreatedDate), new Date(b.workCreatedDate)))
+		.sort((a, b) => (a.priority <= b.priority ? -1 : 1));
 	return (
 		<ArticleFrame>
 			<h1>All Works</h1>
 			<div className={styles.workCards}>
-				{works.map((elm) => {
+				{sortedWorks.map((elm) => {
 					return (
 						<div key={elm.id} className={styles.card}>
 							<Card

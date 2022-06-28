@@ -4,6 +4,7 @@ import { GetStaticProps } from 'next';
 import { work } from '../../types/cms-types';
 import Tag from '../../components/atoms/tag';
 import { client } from '../../libs/client';
+import format from 'date-fns/format';
 
 type Props = {
 	article: work;
@@ -13,7 +14,7 @@ export default function WorkArticle({ article }: Props) {
 	return (
 		<ArticleFrame>
 			<h1>{article.title}</h1>
-			<p>作品作成年：{article.workCreatedDate}</p>
+			<p>作品制作年：{format(new Date(article.workCreatedDate), 'yyyy年')}</p>
 			<div>
 				タグ：
 				{article.tags.map((tag) => {
