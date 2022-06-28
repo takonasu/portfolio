@@ -1,6 +1,7 @@
 @use '../../variables' as var;
 
 .main {
+    font-size: inherit;
     margin: 5px;
     color: var.$StartTrueDreams2;
     .span {

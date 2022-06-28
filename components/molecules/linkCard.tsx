@@ -14,7 +14,7 @@ export const LinkCard: React.FC<Props> = ({ icon, title, detail, link }) => {
 		<a href={link} className={styles.main}>
 			<header>
 				<div className={styles.icon}>
-					<FontAwesomeIcon icon={icon} />
+					<FontAwesomeIcon icon={icon} size="1x" />
 				</div>
 				<div className={styles.title}>
 					<p>{title}</p>

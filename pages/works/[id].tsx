@@ -14,12 +14,14 @@ export default function WorkArticle({ article }: Props) {
 	return (
 		<ArticleFrame>
 			<h1>{article.title}</h1>
-			<p>作品制作年：{format(new Date(article.workCreatedDate), 'yyyy年')}</p>
-			<div>
-				タグ：
-				{article.tags.map((tag) => {
-					return <Tag key={tag.id} label={tag.name} />;
-				})}
+			<div className={styles.info}>
+				<p>作品制作年：{format(new Date(article.workCreatedDate), 'yyyy年')}</p>
+				<p>
+					タグ：
+					{article.tags.map((tag) => {
+						return <Tag key={tag.id} label={tag.name} />;
+					})}
+				</p>
 			</div>
 			<div
 				className={styles.article}
