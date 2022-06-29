@@ -16,7 +16,10 @@ export const TopLink: React.FC<Props> = ({}) => {
 				</p>
 			</MainArticle>
 			<div className={styles.button}>
-				<Button label="お問い合わせ" link="https://www.takonasu.net" />
+				<Button
+					label="お問い合わせ"
+					link="https://docs.google.com/forms/d/e/1FAIpQLSez7mvGC_IKCc9RAeaHVVpHME5-Q4lsEGCcCMjsXAO4JLJc9w/viewform?usp=sf_link"
+				/>
 			</div>
 		</div>
 	);

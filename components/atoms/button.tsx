@@ -6,7 +6,7 @@ type Props = {
 };
 export const Button: React.FC<Props> = ({ label, link }) => {
 	return (
-		<a href={link} className={styles.main}>
+		<a href={link} className={styles.main} target="_blank" rel="noopener noreferrer">
 			{label}
 		</a>
 	);

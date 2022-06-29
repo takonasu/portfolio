@@ -2,8 +2,11 @@
 @use '../../_breakpoint' as bp;
 
 .main {
+  position: relative;
   margin: 2rem auto;
   padding: 2rem;
+  // footer考慮
+  padding-bottom: 4rem;
   width: 100vw;
   min-height: 80vh;
   max-width: 980px;
@@ -19,7 +22,13 @@
     text-align: center;
   }
 
+  footer {
+    position: absolute;
+    bottom: 1rem;
+  }
+
   @include bp.mq(md) {
     padding: 1rem;
+    padding-bottom: 4rem;
   }
 }

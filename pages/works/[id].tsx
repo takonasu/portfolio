@@ -1,5 +1,6 @@
 import format from 'date-fns/format';
 import { GetStaticProps } from 'next';
+import Link from 'next/link';
 
 import Tag from '../../components/atoms/tag';
 import HeaderLayout from '../../components/headerLayout';
@@ -13,9 +14,14 @@ type Props = {
 };
 
 export default function WorkArticle({ article }: Props) {
+	const articleFooter = (
+		<Link href="/works">
+			<a>&lt; All Worksへ戻る</a>
+		</Link>
+	);
 	return (
 		<HeaderLayout>
-			<ArticleFrame>
+			<ArticleFrame articleFooter={articleFooter}>
 				<h1>{article.title}</h1>
 				<div className={styles.info}>
 					<p>作品制作年：{format(new Date(article.workCreatedDate), 'yyyy年')}</p>

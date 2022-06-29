@@ -1,4 +1,5 @@
 import compareDesc from 'date-fns/compareDesc';
+import Link from 'next/link';
 
 import styles from '../../../styles/components/templates/works/Main.module.scss';
 import { work, categories, tags } from '../../../types/cms-types';
@@ -15,8 +16,13 @@ export const Main: React.FC<Props> = ({ works, categories, tags }) => {
 	const sortedWorks = [...works]
 		.sort((a, b) => compareDesc(new Date(a.workCreatedDate), new Date(b.workCreatedDate)))
 		.sort((a, b) => (a.priority <= b.priority ? -1 : 1));
+	const articleFooter = (
+		<Link href="/">
+			<a>&lt; TOPへ戻る</a>
+		</Link>
+	);
 	return (
-		<ArticleFrame>
+		<ArticleFrame articleFooter={articleFooter}>
 			<h1>All Works</h1>
 			<div className={styles.workCards}>
 				{sortedWorks.map((elm) => {
