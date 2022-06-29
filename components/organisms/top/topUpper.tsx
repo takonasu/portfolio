@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from '../../../styles/components/organisms/top/TopUpper.module.scss';
 import { Link as Scroll } from 'react-scroll';
 
@@ -19,9 +20,9 @@ export const TopUpper: React.FC<Props> = ({}) => {
 							</Scroll>
 						</div>
 						<div>
-							<Scroll to="Works" smooth={true} duration={600}>
-								Works
-							</Scroll>
+							<Link href="/works">
+								<a>All Works</a>
+							</Link>
 						</div>
 						<div>
 							<Scroll to="Links" smooth={true} duration={600}>

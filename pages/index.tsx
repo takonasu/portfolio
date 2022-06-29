@@ -1,4 +1,3 @@
-import type { NextPage } from 'next';
 import { client } from '../libs/client';
 import { work } from '../types/cms-types';
 import Head from 'next/head';

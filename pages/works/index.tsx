@@ -1,8 +1,7 @@
-import type { NextPage } from 'next';
-import Link from 'next/link';
 import { client } from '../../libs/client';
 import { work, categories, tags } from '../../types/cms-types';
 import Main from '../../components/templates/works/main';
+import HeaderLayout from '../../components/headerLayout';
 
 type Props = {
 	works: [work];
@@ -12,9 +11,9 @@ type Props = {
 
 const Home = ({ works, categories, tags }: Props) => {
 	return (
-		<div>
+		<HeaderLayout>
 			<Main works={works} categories={categories} tags={tags} />
-		</div>
+		</HeaderLayout>
 	);
 };
 

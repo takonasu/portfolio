@@ -1,7 +1,6 @@
 import styles from '../../../styles/components/templates/works/Main.module.scss';
 import ArticleFrame from '../../organisms/articleFrame';
 import Card from '../../molecules/card';
-import Tag from '../../atoms/tag';
 import { work, categories, tags } from '../../../types/cms-types';
 import compareDesc from 'date-fns/compareDesc';
 

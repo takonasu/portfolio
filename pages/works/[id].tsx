@@ -5,6 +5,7 @@ import { work } from '../../types/cms-types';
 import Tag from '../../components/atoms/tag';
 import { client } from '../../libs/client';
 import format from 'date-fns/format';
+import HeaderLayout from '../../components/headerLayout';
 
 type Props = {
 	article: work;
@@ -12,24 +13,26 @@ type Props = {
 
 export default function WorkArticle({ article }: Props) {
 	return (
-		<ArticleFrame>
-			<h1>{article.title}</h1>
-			<div className={styles.info}>
-				<p>作品制作年：{format(new Date(article.workCreatedDate), 'yyyy年')}</p>
-				<p>
-					タグ：
-					{article.tags.map((tag) => {
-						return <Tag key={tag.id} label={tag.name} />;
-					})}
-				</p>
-			</div>
-			<div
-				className={styles.article}
-				dangerouslySetInnerHTML={{
-					__html: `${article.body}`
-				}}
-			/>
-		</ArticleFrame>
+		<HeaderLayout>
+			<ArticleFrame>
+				<h1>{article.title}</h1>
+				<div className={styles.info}>
+					<p>作品制作年：{format(new Date(article.workCreatedDate), 'yyyy年')}</p>
+					<p>
+						タグ：
+						{article.tags.map((tag) => {
+							return <Tag key={tag.id} label={tag.name} />;
+						})}
+					</p>
+				</div>
+				<div
+					className={styles.article}
+					dangerouslySetInnerHTML={{
+						__html: `${article.body}`
+					}}
+				/>
+			</ArticleFrame>
+		</HeaderLayout>
 	);
 }
 

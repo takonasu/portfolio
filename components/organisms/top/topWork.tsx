@@ -12,7 +12,8 @@ type Props = {
 export const TopWork: React.FC<Props> = ({ works }: Props) => {
 	const sortedWorks = [...works]
 		.filter((elm) => elm.priority == 0)
-		.sort((a, b) => compareDesc(new Date(a.workCreatedDate), new Date(b.workCreatedDate)));
+		.sort((a, b) => compareDesc(new Date(a.workCreatedDate), new Date(b.workCreatedDate)))
+		.sort((a, b) => (a.priority <= b.priority ? -1 : 1));
 	return (
 		<div className={styles.workFrame}>
 			<h1>Works</h1>
