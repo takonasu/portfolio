@@ -1,9 +1,10 @@
-import Link from 'next/link';
-import { work } from '../../../types/cms-types';
 import compareDesc from 'date-fns/compareDesc';
+import Link from 'next/link';
+
 import styles from '../../../styles/components/organisms/top/TopWork.module.scss';
-import MainArticle from '../../molecules/mainArticle';
+import { work } from '../../../types/cms-types';
 import Card from '../../molecules/card';
+import MainArticle from '../../molecules/mainArticle';
 
 type Props = {
 	works: [work];

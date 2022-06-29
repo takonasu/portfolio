@@ -1,11 +1,12 @@
-import styles from '../../styles/WorkArticle.module.scss';
-import ArticleFrame from '../../components/organisms/articleFrame';
-import { GetStaticProps } from 'next';
-import { work } from '../../types/cms-types';
-import Tag from '../../components/atoms/tag';
-import { client } from '../../libs/client';
 import format from 'date-fns/format';
+import { GetStaticProps } from 'next';
+
+import Tag from '../../components/atoms/tag';
 import HeaderLayout from '../../components/headerLayout';
+import ArticleFrame from '../../components/organisms/articleFrame';
+import { client } from '../../libs/client';
+import styles from '../../styles/WorkArticle.module.scss';
+import { work } from '../../types/cms-types';
 
 type Props = {
 	article: work;

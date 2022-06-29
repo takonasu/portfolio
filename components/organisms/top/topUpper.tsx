@@ -1,6 +1,7 @@
 import Link from 'next/link';
-import styles from '../../../styles/components/organisms/top/TopUpper.module.scss';
 import { Link as Scroll } from 'react-scroll';
+
+import styles from '../../../styles/components/organisms/top/TopUpper.module.scss';
 
 type Props = {};
 

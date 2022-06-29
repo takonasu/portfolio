@@ -1,6 +1,7 @@
-import styles from '../../styles/components/molecules/LinkCard.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import styles from '../../styles/components/molecules/LinkCard.module.scss';
 
 type Props = {
 	icon: IconProp;

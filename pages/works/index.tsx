@@ -1,7 +1,7 @@
+import HeaderLayout from '../../components/headerLayout';
+import Main from '../../components/templates/works/main';
 import { client } from '../../libs/client';
 import { work, categories, tags } from '../../types/cms-types';
-import Main from '../../components/templates/works/main';
-import HeaderLayout from '../../components/headerLayout';
 
 type Props = {
 	works: [work];

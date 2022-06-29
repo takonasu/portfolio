@@ -1,6 +1,6 @@
 import styles from '../../../styles/components/organisms/top/TopContact.module.scss';
-import MainArticle from '../../molecules/mainArticle';
 import Button from '../../atoms/button';
+import MainArticle from '../../molecules/mainArticle';
 
 type Props = {};
 

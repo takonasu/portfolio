@@ -1,8 +1,9 @@
-import styles from '../../../styles/components/templates/works/Main.module.scss';
-import ArticleFrame from '../../organisms/articleFrame';
-import Card from '../../molecules/card';
-import { work, categories, tags } from '../../../types/cms-types';
 import compareDesc from 'date-fns/compareDesc';
+
+import styles from '../../../styles/components/templates/works/Main.module.scss';
+import { work, categories, tags } from '../../../types/cms-types';
+import Card from '../../molecules/card';
+import ArticleFrame from '../../organisms/articleFrame';
 
 type Props = {
 	works: [work];

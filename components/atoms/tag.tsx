@@ -1,6 +1,7 @@
-import styles from '../../styles/components/atoms/Tag.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTag } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import styles from '../../styles/components/atoms/Tag.module.scss';
 
 type Props = {
 	label: string;

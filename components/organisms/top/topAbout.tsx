@@ -1,5 +1,6 @@
-import styles from '../../../styles/components/organisms/top/TopAbout.module.scss';
 import Image from 'next/image';
+
+import styles from '../../../styles/components/organisms/top/TopAbout.module.scss';
 import MainArticle from '../../molecules/mainArticle';
 import NormalList from '../../molecules/normalList';
 

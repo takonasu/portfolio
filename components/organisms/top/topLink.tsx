@@ -1,8 +1,9 @@
-import styles from '../../../styles/components/organisms/top/TopLink.module.scss';
-import MainArticle from '../../molecules/mainArticle';
-import LinkCard from '../../molecules/linkCard';
 import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faPencil } from '@fortawesome/free-solid-svg-icons';
+
+import styles from '../../../styles/components/organisms/top/TopLink.module.scss';
+import LinkCard from '../../molecules/linkCard';
+import MainArticle from '../../molecules/mainArticle';
 
 type Props = {};
 

@@ -1,9 +1,10 @@
-import { client } from '../libs/client';
-import { work } from '../types/cms-types';
 import Head from 'next/head';
-import styles from '../styles/Home.module.scss';
+
 import TopUpper from '../components/organisms/top/topUpper';
 import Main from '../components/templates/top/main';
+import { client } from '../libs/client';
+import styles from '../styles/Home.module.scss';
+import { work } from '../types/cms-types';
 
 type Props = {
 	works: [work];

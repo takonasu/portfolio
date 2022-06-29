@@ -1,6 +1,7 @@
-import Link from 'next/link';
-import styles from '../../styles/components/molecules/Card.module.scss';
 import Image from 'next/image';
+import Link from 'next/link';
+
+import styles from '../../styles/components/molecules/Card.module.scss';
 
 type Props = {
 	image: string;

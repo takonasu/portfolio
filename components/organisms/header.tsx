@@ -1,4 +1,5 @@
 import Link from 'next/link';
+
 import styles from '../../styles/components/organisms/Header.module.scss';
 
 type Props = {};

@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+
 import styles from '../../styles/components/molecules/MainArticle.module.scss';
 
 type Props = {
