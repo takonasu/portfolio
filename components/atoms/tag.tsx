@@ -1,5 +1,4 @@
-import { faTag } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaTag } from 'react-icons/fa';
 
 import styles from '../../styles/components/atoms/Tag.module.scss';
 
@@ -10,7 +9,7 @@ type Props = {
 export const Tag: React.FC<Props> = ({ label }) => {
 	return (
 		<span className={styles.main}>
-			<FontAwesomeIcon icon={faTag} size="1x" />
+			<FaTag size="1rem" />
 			<span className={styles.span}>{label}</span>
 		</span>
 	);

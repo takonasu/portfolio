@@ -1,5 +1,4 @@
-import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faPencil } from '@fortawesome/free-solid-svg-icons';
+import { FaTwitter, FaGithub, FaPencilAlt } from 'react-icons/fa';
 
 import styles from '../../../styles/components/organisms/top/TopLink.module.scss';
 import LinkCard from '../../molecules/linkCard';
@@ -15,7 +14,7 @@ export const TopLink: React.FC<Props> = ({}) => {
 				<div className={styles.linkCards}>
 					<div className={styles.linkCard}>
 						<LinkCard
-							icon={faGithub}
+							icon={<FaTwitter size="2rem" />}
 							title="GitHub"
 							detail="各種作品のソースコードを公開しています。"
 							link="https://github.com/takonasu"
@@ -23,7 +22,7 @@ export const TopLink: React.FC<Props> = ({}) => {
 					</div>
 					<div className={styles.linkCard}>
 						<LinkCard
-							icon={faTwitter}
+							icon={<FaGithub size="2rem" />}
 							title="Twitter"
 							detail="一言日記です。技術的な話は特にしていません。"
 							link="https://twitter.com/ITF_tako"
@@ -31,7 +30,7 @@ export const TopLink: React.FC<Props> = ({}) => {
 					</div>
 					<div className={styles.linkCard}>
 						<LinkCard
-							icon={faPencil}
+							icon={<FaPencilAlt size="2rem" />}
 							title="Qiita"
 							detail="技術的な小ネタ等の記事を公開しています。"
 							link="https://qiita.com/takonasu"
