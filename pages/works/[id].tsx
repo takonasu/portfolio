@@ -1,4 +1,3 @@
-
 import format from 'date-fns/format';
 import { GetStaticProps } from 'next';
 import ErrorPage from 'next/error';
@@ -58,11 +57,12 @@ export const getStaticPaths = async () => {
 	return { paths, fallback: true };
 };
 
+const isDraft = (item: any): item is { draftKey: string } => !!(item?.draftKey && typeof item.draftKey === 'string');
+
 export const getStaticProps: GetStaticProps = async (context) => {
 	const id = context.params?.id;
 	const idExceptArray = id instanceof Array ? id[0] : id;
-
-	const draftKey = context.previewData?.draftKey ? { draftKey: context.previewData.draftKey } : {};
+	const draftKey = isDraft(context.previewData) ? { draftKey: context.previewData.draftKey } : {};
 
 	const data = await client.get({
 		endpoint: 'work',
