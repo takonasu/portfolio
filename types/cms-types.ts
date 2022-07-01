@@ -52,6 +52,10 @@ export type work<T = 'get'> = Structure<
 		 * 優先度
 		 */
 		priority: number;
+		/**
+		 * 一覧表示
+		 */
+		visibleList: boolean;
 	}
 >;
 

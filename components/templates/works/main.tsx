@@ -14,6 +14,7 @@ type Props = {
 
 export const Main: React.FC<Props> = ({ works, categories, tags }) => {
 	const sortedWorks = [...works]
+		.filter((work) => work.visibleList)
 		.sort((a, b) => compareDesc(new Date(a.workCreatedDate), new Date(b.workCreatedDate)))
 		.sort((a, b) => (a.priority <= b.priority ? -1 : 1));
 	const articleFooter = (
