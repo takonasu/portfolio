@@ -1,5 +1,7 @@
+
 import format from 'date-fns/format';
 import { GetStaticProps } from 'next';
+import ErrorPage from 'next/error';
 import Link from 'next/link';
 
 import Tag from '../../components/atoms/tag';
@@ -14,6 +16,10 @@ type Props = {
 };
 
 export default function WorkArticle({ article }: Props) {
+	if (!article) {
+		return <ErrorPage statusCode={404} />;
+	}
+
 	const articleFooter = (
 		<Link href="/works">
 			<a>&lt; All Worksへ戻る</a>
@@ -49,17 +55,20 @@ export const getStaticPaths = async () => {
 	};
 	const data: DataType = await client.get({ endpoint: 'work' });
 	const paths = data.contents.map((content) => `/works/${content.id}`);
-	return { paths, fallback: false };
+	return { paths, fallback: true };
 };
 
-export const getStaticProps: GetStaticProps = async (ctx) => {
-	const id = ctx.params?.id;
+export const getStaticProps: GetStaticProps = async (context) => {
+	const id = context.params?.id;
 	const idExceptArray = id instanceof Array ? id[0] : id;
+
+	const draftKey = context.previewData?.draftKey ? { draftKey: context.previewData.draftKey } : {};
+
 	const data = await client.get({
 		endpoint: 'work',
-		contentId: idExceptArray
+		contentId: idExceptArray,
+		queries: draftKey
 	});
-
 	return {
 		props: {
 			article: data
