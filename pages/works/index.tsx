@@ -1,3 +1,5 @@
+import Head from 'next/head';
+
 import HeaderLayout from '../../components/headerLayout';
 import Main from '../../components/templates/works/main';
 import { client } from '../../libs/client';
@@ -11,9 +13,15 @@ type Props = {
 
 const Home = ({ works, categories, tags }: Props) => {
 	return (
-		<HeaderLayout>
-			<Main works={works} categories={categories} tags={tags} />
-		</HeaderLayout>
+		<>
+			<Head>
+				<title>Takonasu&apos;s Portfolio | 作品一覧</title>
+				<meta property="og:description" content="Takonasu's Portfolio | 作品一覧" />
+			</Head>
+			<HeaderLayout>
+				<Main works={works} categories={categories} tags={tags} />
+			</HeaderLayout>
+		</>
 	);
 };
 

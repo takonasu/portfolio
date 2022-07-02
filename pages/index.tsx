@@ -12,25 +12,15 @@ type Props = {
 
 const Home = ({ works }: Props) => {
 	return (
-		<div className={styles.container}>
+		<>
 			<Head>
-				<title>Takonasu&apos;s Portfolio</title>
-				<link rel="icon" href="/favicon.ico" />
-
-				<meta property="og:url" content={process.env.HOST_URL ?? process.env.VERCEL_URL} />
-				<meta property="og:title" content="Takonasu's Portfolio" />
-				<meta
-					property="og:image"
-					content={`${process.env.HOST_URL ?? process.env.VERCEL_URL}}/images/background.png`}
-				/>
-				<meta property="og:description" content="たこなすのポートフォリオ" />
-				<meta name="twitter:card" content="summary" />
-				<meta name="twitter:site" content="@ITF_tako" />
+				<meta property="og:description" content="Takonasu's Portfolio | TOP" />
 			</Head>
-
-			<TopUpper />
-			<Main works={works} />
-		</div>
+			<div className={styles.container}>
+				<TopUpper />
+				<Main works={works} />
+			</div>
+		</>
 	);
 };
 

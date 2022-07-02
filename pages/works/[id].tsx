@@ -1,6 +1,7 @@
 import format from 'date-fns/format';
 import { GetStaticProps } from 'next';
 import ErrorPage from 'next/error';
+import Head from 'next/head';
 import Link from 'next/link';
 
 import Tag from '../../components/atoms/tag';
@@ -25,26 +26,32 @@ export default function WorkArticle({ article }: Props) {
 		</Link>
 	);
 	return (
-		<HeaderLayout>
-			<ArticleFrame articleFooter={articleFooter}>
-				<h1>{article.title}</h1>
-				<div className={styles.info}>
-					<p>作品制作年：{format(new Date(article.workCreatedDate), 'yyyy年')}</p>
-					<p>
-						タグ：
-						{article.tags.map((tag) => {
-							return <Tag key={tag.id} label={tag.name} />;
-						})}
-					</p>
-				</div>
-				<div
-					className={styles.article}
-					dangerouslySetInnerHTML={{
-						__html: `${article.body}`
-					}}
-				/>
-			</ArticleFrame>
-		</HeaderLayout>
+		<>
+			<Head>
+				<title>Takonasu&apos;s Portfolio | {article.title}</title>
+				<meta property="og:description" content={"Takonasu's Portfolio | " + article.title} />
+			</Head>
+			<HeaderLayout>
+				<ArticleFrame articleFooter={articleFooter}>
+					<h1>{article.title}</h1>
+					<div className={styles.info}>
+						<p>作品制作年：{format(new Date(article.workCreatedDate), 'yyyy年')}</p>
+						<p>
+							タグ：
+							{article.tags.map((tag) => {
+								return <Tag key={tag.id} label={tag.name} />;
+							})}
+						</p>
+					</div>
+					<div
+						className={styles.article}
+						dangerouslySetInnerHTML={{
+							__html: `${article.body}`
+						}}
+					/>
+				</ArticleFrame>
+			</HeaderLayout>
+		</>
 	);
 }
 
