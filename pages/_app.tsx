@@ -9,9 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<>
 			<Head>
-				<title>Takonasu&apos;s Portfolio</title>
 				<link rel="icon" href="/images/ogp.jpg" />
-
 				<meta
 					property="og:url"
 					content={process.env.NEXT_PUBLIC_HOST_URL ?? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`}

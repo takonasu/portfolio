@@ -14,6 +14,7 @@ const Home = ({ works }: Props) => {
 	return (
 		<>
 			<Head>
+				<title>Takonasu&apos;s Portfolio</title>
 				<meta property="og:description" content="Takonasu's Portfolio | TOP" />
 			</Head>
 			<div className={styles.container}>
