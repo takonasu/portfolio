@@ -12,11 +12,16 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<title>Takonasu&apos;s Portfolio</title>
 				<link rel="icon" href="/images/ogp.jpg" />
 
-				<meta property="og:url" content={process.env.NEXT_PUBLIC_HOST_URL ?? process.env.NEXT_PUBLIC_VERCEL_URL} />
+				<meta
+					property="og:url"
+					content={process.env.NEXT_PUBLIC_HOST_URL ?? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`}
+				/>
 				<meta property="og:title" content="Takonasu's Portfolio" />
 				<meta
 					property="og:image"
-					content={`${process.env.NEXT_PUBLIC_HOST_URL ?? process.env.NEXT_PUBLIC_VERCEL_URL}/images/ogp.jpg`}
+					content={`${
+						process.env.NEXT_PUBLIC_HOST_URL ?? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
+					}/images/ogp.jpg`}
 				/>
 				<meta name="twitter:card" content="summary" />
 				<meta name="twitter:site" content="@ITF_tako" />
