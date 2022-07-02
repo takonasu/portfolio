@@ -1,4 +1,5 @@
 @use './variables' as var;
+@use './_breakpoint' as bp;
 
 // work用記事のスタイル
 .article {
@@ -11,5 +12,22 @@
   text-align: right;
   p {
     margin: 0;
+  }
+}
+
+.previewImage {
+  margin: 1rem 0;
+  width: 100%;
+  .previewImageWrapper {
+    max-width: 50%;
+    margin: auto;
+  }
+}
+
+@include bp.mq(md) {
+  .previewImage {
+    .previewImageWrapper {
+      max-width: 100%;
+    }
   }
 }

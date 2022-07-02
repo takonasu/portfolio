@@ -2,6 +2,7 @@ import format from 'date-fns/format';
 import { GetStaticProps } from 'next';
 import ErrorPage from 'next/error';
 import Head from 'next/head';
+import Image from 'next/image';
 import Link from 'next/link';
 
 import Tag from '../../components/atoms/tag';
@@ -42,6 +43,18 @@ export default function WorkArticle({ article }: Props) {
 								return <Tag key={tag.id} label={tag.name} />;
 							})}
 						</p>
+					</div>
+					<div className={styles.previewImage}>
+						<div className={styles.previewImageWrapper}>
+							<Image
+								src={article.image.url}
+								width={article.image.width}
+								height={article.image.height}
+								layout="responsive"
+								objectFit="contain"
+								alt="work image"
+							/>
+						</div>
 					</div>
 					<div
 						className={styles.article}
