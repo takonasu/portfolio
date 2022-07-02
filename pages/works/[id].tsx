@@ -57,18 +57,25 @@ export const getStaticPaths = async () => {
 	return { paths, fallback: true };
 };
 
-const isDraft = (item: any): item is { draftKey: string } => !!(item?.draftKey && typeof item.draftKey === 'string');
+const isDraft = (item: any): item is { draftKey: string } => item?.draftKey && typeof item.draftKey === 'string';
 
 export const getStaticProps: GetStaticProps = async (context) => {
 	const id = context.params?.id;
 	const idExceptArray = id instanceof Array ? id[0] : id;
 	const draftKey = isDraft(context.previewData) ? { draftKey: context.previewData.draftKey } : {};
 
-	const data = await client.get({
-		endpoint: 'work',
-		contentId: idExceptArray,
-		queries: draftKey
-	});
+	let data;
+
+	try {
+		data = await client.get({
+			endpoint: 'work',
+			contentId: idExceptArray,
+			queries: draftKey
+		});
+	} catch (error) {
+		data = null;
+	}
+
 	return {
 		props: {
 			article: data
