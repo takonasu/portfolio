@@ -1,3 +1,4 @@
+import { GetStaticProps } from 'next';
 import Head from 'next/head';
 
 import TopUpper from '../components/organisms/top/topUpper';
@@ -25,7 +26,7 @@ const Home = ({ works }: Props) => {
 	);
 };
 
-export const getStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
 	const apiResult = await Promise.all([client.get({ endpoint: 'work' })]);
 	return {
 		props: {

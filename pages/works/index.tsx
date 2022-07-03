@@ -1,3 +1,4 @@
+import { GetStaticProps } from 'next';
 import Head from 'next/head';
 
 import HeaderLayout from '../../components/headerLayout';
@@ -25,7 +26,7 @@ const Home = ({ works, categories, tags }: Props) => {
 	);
 };
 
-export const getStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
 	const apiResult = await Promise.all([
 		client.get({ endpoint: 'work' }),
 		client.get({ endpoint: 'categories' }),
