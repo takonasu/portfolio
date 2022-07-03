@@ -1,22 +1,15 @@
-# portfolio
+# takonasu's portfolio
+Next.js(TypeScript) + microCMS + Vercel
 
-> My magnificent Nuxt.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+schemaフォルダにmicroCMSからDLしたスキーマ情報のjsonを入れて
 ```
+yarn cms-schema
+```
+を実行することで、スキーマの型生成をしてくれる。
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## microCMS priority一覧
+worksカードはpriorityの値によって表示の順番を変えている。
+|  priority |  説明  |
+| ---- | ---- |
+|  0  |  topページに表示（3つまで）  |
+|  1以上  |  優先度の順にAllworksページに作品作成日順にソートされる  |

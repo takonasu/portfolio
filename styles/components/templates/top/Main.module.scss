@@ -1,0 +1,9 @@
+@use '../../../variables' as var;
+
+.contentFrame {
+  text-align: center;
+}
+
+.contentFrame:not(:first-child) {
+  margin-top: 5rem;
+}

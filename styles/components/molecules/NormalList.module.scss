@@ -1,0 +1,32 @@
+@use '../../variables' as var;
+@use '../../_breakpoint' as bp;
+
+.main {
+  display: flex;
+  align-items: center;
+  background-color: var.$DefaultBackgroundColor;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0rem;
+
+  .day{
+    width: 7rem;
+    font-weight: 500;
+  }
+
+  .contents {
+    width: 100%;
+    
+    .detail {
+      font-size: 14px;
+    }
+  }
+
+  @include bp.mq(md) {
+    flex-direction: column;
+    .day {
+      width: 100%;
+    }
+
+  }
+}

@@ -1,0 +1,42 @@
+@use '../../variables' as var;
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 2.5rem;
+  background-color: var.$DefaultBackgroundColor;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+  position: sticky;
+  top: 100vh;
+
+  p {
+    margin: 0;
+
+    span {
+      margin: 0.25rem;
+      font-weight: bolder;
+    }
+
+    .kanon {
+      color: var.$Kanon;
+    }
+
+    .chisato {
+      color: var.$Chisato;
+    }
+
+    .keke {
+      color: var.$Keke;
+    }
+
+    .sumire {
+      color: var.$Sumire;
+    }
+
+    .ren {
+      color: var.$Ren;
+    }
+  }
+}

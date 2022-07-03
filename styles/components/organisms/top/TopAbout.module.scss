@@ -1,0 +1,32 @@
+@use '../../../variables' as var;
+@use '../../../_breakpoint' as bp;
+
+.title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .myName {
+    h1,
+    h2 {
+      margin: 0;
+      color: var.$DefaultCharacterColor;
+      font-weight: 700;
+    }
+  }
+  .myImage {
+    max-height: 100%;
+    width: 25%;
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  @include bp.mq(md) {
+     flex-direction: column;
+
+     .myImage {
+      width: 40%;
+      margin: 2rem;
+    }
+  }
+}

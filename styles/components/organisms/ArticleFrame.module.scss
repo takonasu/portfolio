@@ -1,0 +1,34 @@
+@use '../../variables' as var;
+@use '../../_breakpoint' as bp;
+
+.main {
+  position: relative;
+  margin: 2rem auto;
+  padding: 2rem;
+  // footer考慮
+  padding-bottom: 4rem;
+  width: 100vw;
+  min-height: 80vh;
+  max-width: 980px;
+  background-color: var.$DefaultBackgroundColor;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+  word-wrap: break-word;
+
+  a {
+    font-weight: 500;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 1rem;
+  }
+
+  @include bp.mq(md) {
+    padding: 1rem;
+    padding-bottom: 4rem;
+  }
+}

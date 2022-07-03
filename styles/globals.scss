@@ -1,0 +1,40 @@
+@use './variables' as var;
+@use './_breakpoint' as bp;
+@import 'https://fonts.googleapis.com/earlyaccess/notosansjp.css';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: var.$DefaultCharacterColor;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  background-image: url(/images/background.png);
+  background-color: rgb(255 255 255 / 80%);
+  background-blend-mode: lighten;
+  background-size: 10%;
+}
+
+h1 {
+  color: var.$StartTrueDreams;
+}
+
+h2 {
+  color: var.$StartTrueDreams2;
+}
+
+a {
+  color: var.$StartTrueDreams2;
+  text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@include bp.mq(sm) {
+  html,
+  body {
+    background-size: 30%;
+  }
+}

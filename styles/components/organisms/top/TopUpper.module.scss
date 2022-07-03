@@ -1,0 +1,92 @@
+@use '../../../variables' as var;
+@use '../../../_breakpoint' as bp;
+
+.main {
+  position: relative;
+  height: 100vh;
+  background-color: var.$DefaultBackgroundColor;
+  background: url(/images/background.png);
+  background-size: 10%;
+
+  .top {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var.$DefaultBackgroundColor;
+    height: 100vh;
+    width: 62vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .topMenuFrame {
+      display: inline-flex;
+      height: 25vh;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .titleFrame {
+        text-align: right;
+
+        h1 {
+          margin: 0;
+          font-size: 4vw;
+          color: var.$DefaultCharacterColor;
+        }
+
+        p {
+          margin: 0;
+          font-size: 1vw;
+        }
+      }
+
+      .linksFrame {
+        display: inline-flex;
+        justify-content: space-between;
+        font-size: 2vw;
+
+        a {
+          color: var.$DefaultCharacterColor;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@include bp.mq(sm) {
+  .main {
+    height: 100vh;
+    background-size: 30%;
+    .top {
+      height: 80vh;
+      width: 100vw;
+      top: initial;
+      bottom: 0;
+
+      .topMenuFrame {
+        height: 70%;
+        justify-content: space-between;
+
+        .titleFrame {
+          text-align: center;
+          h1 {
+            margin: 0;
+            font-size: 30px;
+            color: var.$DefaultCharacterColor;
+          }
+          p {
+            font-size: 10px;
+          }
+        }
+
+        .linksFrame {
+          height: 45%;
+          flex-direction: column;
+          align-items: center;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
