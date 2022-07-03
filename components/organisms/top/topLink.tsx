@@ -14,7 +14,7 @@ export const TopLink: React.FC<Props> = ({}) => {
 				<div className={styles.linkCards}>
 					<div className={styles.linkCard}>
 						<LinkCard
-							icon={<FaTwitter size="2rem" />}
+							icon={<FaGithub size="2rem" />}
 							title="GitHub"
 							detail="各種作品のソースコードを公開しています。"
 							link="https://github.com/takonasu"
@@ -22,7 +22,7 @@ export const TopLink: React.FC<Props> = ({}) => {
 					</div>
 					<div className={styles.linkCard}>
 						<LinkCard
-							icon={<FaGithub size="2rem" />}
+							icon={<FaTwitter size="2rem" />}
 							title="Twitter"
 							detail="一言日記です。技術的な話は特にしていません。"
 							link="https://twitter.com/ITF_tako"
