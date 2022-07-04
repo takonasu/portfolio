@@ -60,7 +60,7 @@ export const TopAbout: React.FC<Props> = ({}) => {
 				/>
 				<NormalList
 					day="2020年6月 - 2022年3月"
-					title="ナイル株式会社"
+					title="ナイル株式会社 長期インターン"
 					detail="社内システム・サーバレスなサービスの開発"
 				/>
 				<NormalList day="2018年4月 -" title="某学習塾 アルバイト" detail="塾講師として小学・中学・高校生を指導" />
