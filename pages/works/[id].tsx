@@ -29,7 +29,7 @@ export default function WorkArticle({ article }: Props) {
 	return (
 		<>
 			<Head>
-				<title>{`Takonasu&apos;s Portfolio | ${article.title}`}</title>
+				<title>{`Takonasu's Portfolio | ${article.title}`}</title>
 				<meta property="og:description" content={"Takonasu's Portfolio | " + article.title} />
 			</Head>
 			<HeaderLayout>
