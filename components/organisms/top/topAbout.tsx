@@ -36,7 +36,7 @@ export const TopAbout: React.FC<Props> = ({}) => {
 					<br />
 					モノづくりが趣味で電子工作やWEBアプリケーションを作成したりなど幅広く扱っています。
 					<br />
-					のべ12,000人以上が利用している筑波大学専用時間割アプリ <a href="https://www.twinte.net">Twin:te</a>
+					のべ16,000人以上が利用している筑波大学専用時間割アプリ <a href="https://www.twinte.net">Twin:te</a>
 					(ついんて)の発起人で代表を務めています。
 				</p>
 			</MainArticle>
