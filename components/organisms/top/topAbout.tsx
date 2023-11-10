@@ -41,6 +41,7 @@ export const TopAbout: React.FC<Props> = ({}) => {
 				</p>
 			</MainArticle>
 			<MainArticle title="免許・資格">
+				<NormalList day="2023年11月" title="第⼀級陸上特殊無線技⼠ 免許取得" />
 				<NormalList day="2023年8月" title="第一級アマチュア無線技士 免許取得" />
 				<NormalList day="2023年7月" title="FP3級 試験合格" />
 				<NormalList day="2023年2月" title="日商簿記3級 試験合格" />
